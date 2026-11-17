@@ -1,0 +1,984 @@
+; Build Search data for Behemoth Health Bars, made from Dauntless Builder's data for Dauntless 1.14.6
+; (github.com/atomicptr/dauntless-builder-reforged; the collected data is public domain).
+; P|perk|type|description|rank 1|rank 2|rank 3|rank 4|rank 5|rank 6 (ranks from the Dauntless Forever launcher's 1.14.7 perk tables)   W|weapon type|name|slot|slot|perks|bond element (legendary)|element|exotic|icon|special effects (\n between)
+; A|piece|name|behemoth|perk|slot|exotic|strength|weakness|icon    L|lantern slot
+; Every perk on an item counts +3 (power surged), and every cell counts +3.
+P|Acidic|Finesse|Increases Wound damage at the cost of Part damage.|Converts 30% of Part Damage to Wound Damage.|Converts 40% of Part Damage to Wound Damage.|Converts 50% of Part Damage to Wound Damage.|Converts 50% of Part Damage to Wound Damage.\n+10% Part damage|Converts 50% of Part Damage to Wound Damage.\n+15% Part damage|Converts 50% of Part Damage to Wound Damage.\n+20% Part damage
+P|Adrenaline|Alacrity|Increases damage dealt based on stamina spent.|Grants +0.5% damage for every 10 stamina missing|Grants +1% damage for every 10 stamina missing|Grants +1.5% damage for every 10 stamina missing|Grants +2% damage for every 10 stamina missing|Grants +2.5% damage for every 10 stamina missing|Grants +3% damage for every 10 stamina missing
+P|Aegis|Fortitude|Increases amount of shields received. At later ranks, after gaining 1000 shields, ignore the next incoming hit within 15 seconds.|Increases all shields received by +5%.|Increases all shields received by +8%.|Increases all shields received by +11%.|Increases all shields received by +14%.\nAfter gaining 1000 shields from any source, ignore the next incoming hit within the next 15 seconds.|Increases all shields received by +17%.\nAfter gaining 1000 shields from any source, ignore the next incoming hit within the next 15 seconds.|Increases all shields received by +20%.\nAfter gaining 1000 shields from any source, ignore the next incoming hit within the next 15 seconds.
+P|Aetherborne|Insight|Increases the benefits of using aether vents.|When using an aether vent, gain +25 healing and have a 25% chance to not consume a vent charge|When using an aether vent, gain +50 healing and have a 25% chance to not consume a vent charge|When using an aether vent, gain +75 healing and have a 25% chance to not consume a vent charge|When using an aether vent, gain +100 healing and have a 25% chance to not consume a vent charge\nEnter aether rush when using an aether vent.|When using an aether vent, gain +150 healing and have a 25% chance to not consume a vent charge\nEnter aether rush when using an aether vent.|When using an aether vent, gain +200 healing and have a 25% chance to not consume a vent charge\nEnter aether rush when using an aether vent.
+P|Aetherhunter|Brutality|Increases damage against aether charged Behemoths.|+5% damage vs aether-charged Behemoths|+10% damage vs aether-charged Behemoths|+20% damage vs aether-charged Behemoths|+30% damage vs aether-charged Behemoths|+40% damage vs aether-charged Behemoths|+50% damage vs aether-charged Behemoths
+P|Aetheric Attunement|Insight|Increases the recharge rate of your lantern ability.|Increases the recharge rate of your lantern ability by 10%.|Increases the recharge rate of your lantern ability by 15%.|Increases the recharge rate of your lantern ability by 20%.|Increases the recharge rate of your lantern ability by 30%.|Increases the recharge rate of your lantern ability by 40%.|Increases the recharge rate of your lantern ability by 50%.
+P|Aetheric Evasion|Insight|Reduces Lantern ability cooldown when dodging through Behemoth attacks.|On dodging through an attack, reduce the cooldown of your Lantern ability by 5%.|On dodging through an attack, reduce the cooldown of your Lantern ability by 10%.|On dodging through an attack, reduce the cooldown of your Lantern ability by 15%.|On dodging through an attack, reduce the cooldown of your Lantern ability by 25%.|On dodging through an attack, reduce the cooldown of your Lantern ability by 30%.|On dodging through an attack, reduce the cooldown of your Lantern ability by 35%.
+P|Agility|Alacrity|Reduces the stamina cost of dodging.|-10% dodge stamina cost|-20% dodge stamina cost|-30% dodge stamina cost|-40% dodge stamina cost|-55% dodge stamina cost|-70% dodge stamina cost
+P|Assassin's Frenzy|Alacrity|Increases attack speed when a part is broken.|Each time you break or assist breaking a Behemoth part, gain +15% attack speed for 10 seconds.|Each time you break or assist breaking a Behemoth part, gain +15% attack speed for 15 seconds.|Each time you break or assist breaking a Behemoth part, gain +15% attack speed for 20 seconds.|Each time you break or assist breaking a Behemoth part, gain +15% attack speed for 30 seconds.|Each time you break or assist breaking a Behemoth part, gain +15% attack speed for 35 seconds.|Each time you break or assist breaking a Behemoth part, gain +15% attack speed for 40 seconds.
+P|Assassin's Vigour|Fortitude|Grants Health after breaking a Behemoth part.|After you break a Behemoth part, heal for 50|After you break a Behemoth part, heal for 100|After you break a Behemoth part, heal for 150|After you break a Behemoth part, heal for 200|After you break a Behemoth part, heal for 250|After you break a Behemoth part, heal for 300
+P|Barbed|Finesse|Adds a flat amount of Wound damage on hit.|+10 wound damage|+20 wound damage|+30 wound damage|+40 wound damage\nAfter dodging through an attack, your next attack within 5 seconds deals +250 wound damage|+50 wound damage\nAfter dodging through an attack, your next attack within 5 seconds deals +350 wound damage|+60 wound damage\nAfter dodging through an attack, your next attack within 5 seconds deals +500 wound damage
+P|Berserker|Brutality|Reduces max health. Dealing damage stacks increased damage dealt for a short period.|-50 max health\nAfter dealing damage, gain +1% damage for 3 seconds. Stacks 10 times.|-100 max health\nAfter dealing damage, gain +1.5% damage for 3 seconds. Stacks 10 times.|-150 max health\nAfter dealing damage, gain +2% damage for 3 seconds. Stacks 10 times.|-200 max health\nAfter dealing damage, gain +2.5% damage for 3 seconds. Stacks 10 times.|-250 max health\nAfter dealing damage, gain +3% damage for 3 seconds. Stacks 10 times.|-300 max health\nAfter dealing damage, gain +3.5% damage for 3 seconds. Stacks 10 times.
+P|Bladestorm|Brutality|Adds a flat amount of Part damage on hit.|+5 part damage|+10 part damage|+15 part damage|+20 part damage\nAfter dodging through an attack, your next attack within 5 seconds deals +200 part damage|+30 part damage|+40 part damage\nAfter dodging through an attack, your next attack within 5 seconds deals +400 part damage
+P|Bloodless|Fortitude|Protects against Wounded and Crippling Wound statuses.|Reduces duration of wounded status by 50%|Reduces duration of wounded status by 80%|Immune to wounded status|Reduces effectiveness of crippling wounded status by 50%|Reduces effectiveness of crippling wounded status by 80%|Immune to crippling wound status
+P|Cascade|Insight|Spawn beneficial Boosts for your allies|On Lantern Hold, randomly generate 1 of the following Boosts: Healing, Stamina, Power.|On Lantern Hold, randomly generate 2 of the following Boosts: Healing, Stamina, Power.|On Lantern Hold, randomly generate 3 of the following Boosts: Healing, Stamina, Power.|On Lantern Hold, randomly generate 4 of the following Boosts: Healing, Stamina, Power.\nStamina Boost duration increased|On Lantern Hold, randomly generate 4.2 of the following Boosts: Healing, Stamina, Power.\nHealing Boost also grants shields (max 600).|On Lantern Hold, randomly generate 4.4 of the following Boosts: Healing, Stamina, Power.\nPower Boost duration increased\nChance to generate Invincibility Boost
+P|Catalyst|Insight|Increases effectiveness of Tonics. At later ranks, increases duration as well.|+10% Tonic Effectiveness|+20% Tonic Effectiveness|+30% Tonic Effectiveness|+40% Tonic Effectiveness\n+20% Tonic Duration|+50% Tonic Effectiveness\n+40% Tonic Duration|+60% Tonic Effectiveness\n+60% Tonic Duration
+P|Conditioning|Alacrity|Increases Stamina Regen.|+5 stamina regeneration|+10 stamina regeneration|+15 stamina regeneration|+20 stamina regeneration|+25 stamina regeneration|+30 stamina regeneration
+P|Conduit|Insight|Lantern hold ability grants all Slayers' attack speed temporarily.|After using your lantern's hold ability, grant +4% attack speed to all Slayers for 10 seconds|After using your lantern's hold ability, grant +6% attack speed to all Slayers for 10 seconds|After using your lantern's hold ability, grant +8% attack speed to all Slayers for 10 seconds|After using your lantern's hold ability, grant +10% attack speed to all Slayers for 10 seconds|After using your lantern's hold ability, grant +12.5% attack speed to all Slayers for 10 seconds|After using your lantern's hold ability, grant +15% attack speed to all Slayers for 10 seconds
+P|Conservation|Fortitude|Gain shields whenever your max movement speed is reduced for any reason.|Losing Bonus Movement Speed grants 20 shields for every 5% Movement Speed lost. This effect cannot happen more than once every 2 seconds.|Losing Bonus Movement Speed grants 30 shields for every 5% Movement Speed lost. This effect cannot happen more than once every 2 seconds.|Losing Bonus Movement Speed grants 40 shields for every 5% Movement Speed lost. This effect cannot happen more than once every 2 seconds.|Losing Bonus Movement Speed grants 60 shields for every 5% Movement Speed lost. This effect cannot happen more than once every 2 seconds.|Losing Bonus Movement Speed grants 80 shields for every 5% Movement Speed lost. This effect cannot happen more than once every 2 seconds.|Losing Bonus Movement Speed grants 100 shields for every 5% Movement Speed lost. This effect cannot happen more than once every 2 seconds.
+P|Cunning|Finesse|Grants a chance to critically strike, increasing damage dealt.|+2% critical strike chance|+3% critical strike chance|+4% critical strike chance|+5% critical strike chance\n+10% critical strike damage|+7.5% critical strike chance\n+20% critical strike damage|+10% critical strike chance\n+30% critical strike damage
+P|Deconstruction|Brutality|Bonus damage against objects created by Behemoths.|Deal +10% damage to objects created by Behemoths|Deal +20% damage to objects created by Behemoths|Deal +30% damage to objects created by Behemoths|Deal +50% damage to objects created by Behemoths|Deal +70% damage to objects created by Behemoths|Deal +100% damage to objects created by Behemoths
+P|Drop|Insight|Stamina regenerates more quickly, but the amount regenerated is reduced by your maximum stamina.|Stamina regenerates more quickly, but the amount regenerated is reduced by 15% of your maximum.|Stamina regenerates more quickly, but the amount regenerated is reduced by 25% of your maximum.|Stamina regenerates more quickly, but the amount regenerated is reduced by 35% of your maximum.|Stamina regenerates more quickly, but the amount regenerated is reduced by 50% of your maximum.|Stamina regenerates more quickly, but the amount regenerated is reduced by 60% of your maximum.|Stamina regenerates more quickly, but the amount regenerated is reduced by 75% of your maximum.
+P|Earth|Brutality|Weaponize your shields, detonating them with attacks to deal damage to behemoths.|Hitting a Behemoth with a weapon attack while shields are over 200 will detonate all of your shields, depleting them and dealing damage equal to 100% of the value of the removed shield.|Hitting a Behemoth with a weapon attack while shields are over 200 will detonate all of your shields, depleting them and dealing damage equal to 150% of the value of the removed shield.|Hitting a Behemoth with a weapon attack while shields are over 200 will detonate all of your shields, depleting them and dealing damage equal to 200% of the value of the removed shield.|Hitting a Behemoth with a weapon attack while shields are over 200 will detonate all of your shields, depleting them and dealing damage equal to 300% of the value of the removed shield.|Hitting a Behemoth with a weapon attack while shields are over 200 will detonate all of your shields, depleting them and dealing damage equal to 400% of the value of the removed shield.|Hitting a Behemoth with a weapon attack while shields are over 200 will detonate all of your shields, depleting them and dealing damage equal to 400% of the value of the removed shield.\nAfter detonating your shield, gain a 100 health shield.
+P|Endurance|Alacrity|Increases Max Stamina.|+10 max stamina|+20 max stamina|+40 max stamina|+60 max stamina|+80 max stamina|+100 max stamina
+P|Energized|Insight|Increases weapon meter gain rate.|+10% weapon charge rate|+15% weapon charge rate|+20% weapon charge rate|+25% weapon charge rate|+30% weapon charge rate|+40% weapon charge rate
+P|Engineer|Insight|Increases range of pylons.|+35% increase Pylon range|+50% increase Pylon range|+65% increase Pylon range|+80% increase Pylon range|+115% increase Pylon range|+150% increase Pylon range
+P|Evasion|Alacrity|Increases the time you are invincible when dodging.|Increases dodge invulnerability windows by 7%|Increases dodge invulnerability windows by 14%|Increases dodge invulnerability windows by 21%|Increases dodge invulnerability windows by 28%|Increases dodge invulnerability windows by 35%|Increases dodge invulnerability windows by 42%
+P|Evasive Fury|Alacrity|Temporarily increases attack speed when dodging through a Behemoth's attack.|After dodging through an attack, gain +4% attack speed for 25 seconds|After dodging through an attack, gain +6% attack speed for 25 seconds|After dodging through an attack, gain +8% attack speed for 25 seconds|After dodging through an attack, gain +10% attack speed for 25 seconds|After dodging through an attack, gain +12.5% attack speed for 25 seconds|After dodging through an attack, gain +15% attack speed for 25 seconds
+P|Fire|Finesse|Fight like Fire. Gain increased movement speed and attack speed at all times, but lose health as you damage behemoths.|Gain 5% increased Attack Speed\nGain 5% increased Movement Speed\nOn hitting a behemoth with a weapon attack, lose life equal to 1% of your max health.|Gain 7.5% increased Attack Speed\nGain 10% increased Movement Speed\nOn hitting a behemoth with a weapon attack, lose life equal to 2% of your max health.|Gain 10% increased Attack Speed\nGain 15% increased Movement Speed\nOn hitting a behemoth with a weapon attack, lose life equal to 3% of your max health.|Gain 12.5% increased Attack Speed\nGain 20% increased Movement Speed\nOn hitting a behemoth with a weapon attack, lose life equal to 4% of your max health.|Gain 15% increased Attack Speed\nGain 25% increased Movement Speed\nOn hitting a behemoth with a weapon attack, lose life equal to 5% of your max health.|Gain 20% increased Attack Speed\nGain 30% increased Movement Speed\nOn hitting a behemoth with a weapon attack, lose life equal to 5% of your max health.
+P|Fireproof|Fortitude|Protects against being set on fire.|Reduces duration of on fire status by 10%|Reduces duration of on fire status by 20%|Reduces duration of on fire status by 40%|Reduces duration of on fire status by 60%|Reduces duration of on fire status by 80%|Immune to being set on fire
+P|Fleet Footed|Alacrity|Temporarily increases movement speed after a dodge.|After dodging, gain +10% movement speed for 10 seconds|After dodging, gain +15% movement speed for 10 seconds|After dodging, gain +20% movement speed for 10 seconds|After dodging, gain +25% movement speed for 10 seconds|After dodging, gain +30% movement speed for 10 seconds|After dodging, gain +35% movement speed for 10 seconds
+P|Fortress|Fortitude|Grants a small shield after avoiding hostile damage for a short time.|After not taking hostile damage for 10 seconds, gain a 65 health shield. Stacks 3 times.|After not taking hostile damage for 10 seconds, gain a 75 health shield. Stacks 3 times.|After not taking hostile damage for 10 seconds, gain a 90 health shield. Stacks 3 times.|After not taking hostile damage for 10 seconds, gain a 105 health shield. Stacks 3 times.|After not taking hostile damage for 10 seconds, gain a 120 health shield. Stacks 3 times.|After not taking hostile damage for 10 seconds, gain a 135 health shield. Stacks 3 times.
+P|Galvanized|Finesse|Gain bonus critical strike chance based on current shield.|For every 150 Shield gain 1% bonus critical strike chance|For every 125 Shield gain 1% bonus critical strike chance|For every 100 Shield gain 1% bonus critical strike chance|For every 85 Shield gain 1% bonus critical strike chance\n+5% critical strike damage|For every 70 Shield gain 1% bonus critical strike chance\n+10% critical strike damage|For every 50 Shield gain 1% bonus critical strike chance\n+15% critical strike damage
+P|Grace|Alacrity|Sprinting increases movespeed. At higher levels, converts increased movespeed to attack speed.|While sprinting, gain movespeed up to 5%|While sprinting, gain movespeed up to 8%|While sprinting, gain movespeed up to 11%|While sprinting, gain movespeed up to 14%\nAfter sprinting, gain attack speed equal to half of Grace's bonus movement speed for 40 seconds|While sprinting, gain movespeed up to 17%\nAfter sprinting, gain attack speed equal to half of Grace's bonus movement speed for 40 seconds|While sprinting, gain movespeed up to 20%\nAfter sprinting, gain attack speed equal to half of Grace's bonus movement speed for 40 seconds
+P|Guardian|Fortitude|Grant a portion of any shield applied to your nearest ally.|+5% of health shields applied to you are also applied to your nearest ally for 15 seconds (max 600 shields).|+10% of health shields applied to you are also applied to your nearest ally for 15 seconds (max 600 shields).|+15% of health shields applied to you are also applied to your nearest ally for 15 seconds (max 600 shields).|+20% of health shields applied to you are also applied to your nearest ally for 15 seconds (max 600 shields).|+25% of health shields applied to you are also applied to your nearest ally for 15 seconds (max 600 shields).|+30% of health shields applied to you are also applied to your nearest ally for 15 seconds (max 600 shields).
+P|Impulse|Finesse|Critical Damage is increased based on Movement Speed.|Gain 10% increased Movement Speed. Critical hit damage is increased by 1% for every 5% increased Movement Speed, benefiting from up to 50% increased Movement Speed.|Gain 10% increased Movement Speed. Critical hit damage is increased by 2.5% for every 5% increased Movement Speed, benefiting from up to 50% increased Movement Speed.|Gain 10% increased Movement Speed. Critical hit damage is increased by 4% for every 5% increased Movement Speed, benefiting from up to 50% increased Movement Speed.|Gain 10% increased Movement Speed. Critical hit damage is increased by 6% for every 5% increased Movement Speed, benefiting from up to 50% increased Movement Speed.|Gain 10% increased Movement Speed. Critical hit damage is increased by 8% for every 5% increased Movement Speed, benefiting from up to 50% increased Movement Speed.|Gain 10% increased Movement Speed. Critical hit damage is increased by 10% for every 5% increased Movement Speed, benefiting from up to 50% increased Movement Speed.
+P|Inertia|Alacrity|Increase critical chance steadily while sprinting.|While Sprinting, build up to 10% increased critical chance over 4 seconds. This critical chance lasts for 2 seconds or until critical damage is dealt.|While Sprinting, build up to 20% increased critical chance over 4 seconds. This critical chance lasts for 2 seconds or until critical damage is dealt.|While Sprinting, build up to 30% increased critical chance over 4 seconds. This critical chance lasts for 2 seconds or until critical damage is dealt.|While Sprinting, build up to 50% increased critical chance over 4 seconds. This critical chance lasts for 2 seconds or until critical damage is dealt.|While Sprinting, build up to 75% increased critical chance over 4 seconds. This critical chance lasts for 2 seconds or until critical damage is dealt.|While Sprinting, build up to 100% increased critical chance over 4 seconds. This critical chance lasts for 2 seconds or until critical damage is dealt.
+P|Insulated|Fortitude|Protects against Shocked status effect. At later ranks, allows you to attack electric shields.|Reduces duration of shocked status by 25%|Reduces duration of shocked status by 50%|Reduces duration of shocked status by 75%|Reduces knockback and damage of hitting electrified shields|Prevents knockback and damage when hitting electrified shields|Immune to shocked status
+P|Invigorated|Alacrity|Increases movement speed while stamina is low.|While below 50% of your maximum Stamina, gain +10% movement speed|While below 50% of your maximum Stamina, gain +15% movement speed|While below 50% of your maximum Stamina, gain +20% movement speed|While below 50% of your maximum Stamina, gain +30% movement speed|While below 50% of your maximum Stamina, gain +40% movement speed|While below 50% of your maximum Stamina, gain +50% movement speed
+P|Knockout King|Brutality|Percent increase to Stagger damage.|+5% stagger damage|+10% stagger damage|+15% stagger damage|+20% stagger damage\nAfter dodging through an attack, your next attack within 5 seconds deals +50% stagger damage|+25% stagger damage|+30% stagger damage\nAfter dodging through an attack, your next attack within 5 seconds deals +100% stagger damage
+P|Lucent|Insight|Flask heals over time and increases the recharge rate of your Lantern ability.|Your Flask heals over 20 seconds, but for 20% more healing - while this heal is active, increase the recharge rate of your Lantern ability by 15%.|Your Flask heals over 20 seconds, but for 20% more healing - while this heal is active, increase the recharge rate of your Lantern ability by 25%.|Your Flask heals over 20 seconds, but for 20% more healing - while this heal is active, increase the recharge rate of your Lantern ability by 35%.|Your Flask heals over 20 seconds, but for 20% more healing - while this heal is active, increase the recharge rate of your Lantern ability by 40%.|Your Flask heals over 20 seconds, but for 20% more healing - while this heal is active, increase the recharge rate of your Lantern ability by 45%.|Your Flask heals over 20 seconds, but for 20% more healing - while this heal is active, increase the recharge rate of your Lantern ability by 50%.
+P|Medic|Insight|Improves your ability to revive allies.|When reviving an ally, they are healed an additional 5%|When reviving an ally, they are healed an additional 10%|When reviving an ally, they are healed an additional 20%|Increases revive speed by 66%|When reviving an ally, they are healed an additional 30%|When reviving an ally, they are healed an additional 40%\nAfter reviving an ally, gain a 300 health shield for 20 seconds
+P|Mender|Insight|Using your flask restores other Slayers' health.|Using your Flask also heals all other Slayers for 45|Using your Flask also heals all other Slayers for 90|Using your Flask also heals all other Slayers for 135|Using your Flask also heals all other Slayers for 180|Using your Flask also heals all other Slayers for 225|Using your Flask also heals all other Slayers for 270
+P|Merciless|Finesse|Increases Wound damage against Staggered behemoths. At later ranks, increases wound duration.|+40 wound damage vs staggered Behemoths|+60 wound damage vs staggered Behemoths|+80 wound damage vs staggered Behemoths|+100 wound damage vs staggered Behemoths\nIncreases the duration a part stays wounded by 20%.|+115 wound damage vs staggered Behemoths\nIncreases the duration a part stays wounded by 40%.|+130 wound damage vs staggered Behemoths\nIncreases the duration a part stays wounded by 60%.
+P|Molten|Insight|Grants Molten Heart drops on cooldown.|Dealing damage generates a Molten Heart on a 26 second cooldown, granting immunity to burning and increased attack and movement speed|Dealing damage generates a Molten Heart on a 23 second cooldown, granting immunity to burning and increased attack and movement speed|Dealing damage generates two Molten Hearts on a 23 second cooldown, granting immunity to burning and increased attack and movement speed|Dealing damage generates two Molten Hearts on a 20 second cooldown, granting immunity to burning and increased attack and movement speed|Dealing damage generates three Molten Hearts on a 20 second cooldown, granting immunity to burning and increased attack and movement speed|Dealing damage generates three Molten Hearts on a 16 second cooldown, granting immunity to burning and increased attack and movement speed
+P|Nimble|Alacrity|Restores Stamina when dodging through Behemoth attacks. Excess becomes a stamina shield.|After dodging through an attack, gain 10 stamina. Stamina gained above Max Stamina becomes a stamina shield (max 50).|After dodging through an attack, gain 15 stamina. Stamina gained above Max Stamina becomes a stamina shield (max 50).|After dodging through an attack, gain 20 stamina. Stamina gained above Max Stamina becomes a stamina shield (max 50).|After dodging through an attack, gain 25 stamina. Stamina gained above Max Stamina becomes a stamina shield (max 50).|After dodging through an attack, gain 30 stamina. Stamina gained above Max Stamina becomes a stamina shield (max 50).|After dodging through an attack, gain 45 stamina. Stamina gained above Max Stamina becomes a stamina shield (max 50).
+P|Nine Lives|Fortitude|Grants a chance to halve damage, and at later ranks, the ability to cheat death.|+5% chance to halve incoming damage|+8% chance to halve incoming damage|+12% chance to halve incoming damage|If you would be knocked out, stay up and heal for 400. 5 minute cooldown|+16% chance to halve incoming damage|+20% chance to halve incoming damage\nIf you would be knocked out, stay up and heal for 400, and gain +33% attack speed and movement speed for 10 seconds. 5 minute cooldown
+P|Omnisurge|Insight|Reduce the cooldown of yout Omnicell ability. At later ranks, activating your omnicell ability reduces Lantern ability cooldown.|Reduce the cooldown of your Omnicell ability by 5%.|Reduce the cooldown of your Omnicell ability by 8%.|Reduce the cooldown of your Omnicell ability by 11%.|Reduce the cooldown of your Omnicell ability by 14%.\nOn Omnicell ability activation, reduce the cooldown of your Lantern ability by 20%.|Reduce the cooldown of your Omnicell ability by 17%.\nOn Omnicell ability activation, reduce the cooldown of your Lantern ability by 30%.|Reduce the cooldown of your Omnicell ability by 20%.\nOn Omnicell ability activation, reduce the cooldown of your Lantern ability by 40%.
+P|Overpower|Brutality|Increases damage against staggered Behemoths.|+10% damage vs staggered Behemoths|+15% damage vs staggered Behemoths|+20% damage vs staggered Behemoths|+30% damage vs staggered Behemoths|+35% damage vs staggered Behemoths|+40% damage vs staggered Behemoths
+P|Pacifier|Brutality|Increases stagger damage against enraged Behemoths.|+10% stagger vs enraged Behemoths|+20% stagger vs enraged Behemoths|+30% stagger vs enraged Behemoths|+40% stagger vs enraged Behemoths|+50% stagger vs enraged Behemoths|+60% stagger vs enraged Behemoths
+P|Pack Caller|Insight|Summon Bomber fauna when behemoth parts are broken.|Spawn 1 Bombers when a Behemoth part is broken.\nUp to 1 Bombers can be spawned at a time.|Spawn 1 Bombers when a Behemoth part is broken.\nUp to 2 Bombers can be spawned at a time.|Spawn 1 Bombers when a Behemoth part is broken.\nUp to 3 Bombers can be spawned at a time.|Spawn 2 Bombers when a Behemoth part is broken.\nUp to 3 Bombers can be spawned at a time.|Spawn 2 Bombers when a Behemoth part is broken.\nUp to 6 Bombers can be spawned at a time.|Spawn 3 Bombers when a Behemoth part is broken.\nUp to 6 Bombers can be spawned at a time.
+P|Pack Hunter|Brutality|Deal additional damage for a short time after killing fauna.|Gain 1% bonus damage for 20 seconds after killing Fauna. Stacks up to 5 times.|Gain 2% bonus damage for 20 seconds after killing Fauna. Stacks up to 5 times.|Gain 4% bonus damage for 20 seconds after killing Fauna. Stacks up to 5 times.|Gain 6% bonus damage for 20 seconds after killing Fauna. Stacks up to 5 times.|Gain 8% bonus damage for 20 seconds after killing Fauna. Stacks up to 5 times.|Gain 10% bonus damage for 20 seconds after killing Fauna. Stacks up to 5 times.
+P|Pack Walker|Alacrity|Gain movement speed and attack speed while near fauna.|While near fauna, gain 5% movement speed and attack speed.|While near fauna, gain 10% movement speed and attack speed.|While near fauna, gain 15% movement speed and attack speed.|While near fauna, gain 20% movement speed and attack speed.|While near fauna, gain 25% movement speed and attack speed.|While near fauna, gain 30% movement speed and attack speed.
+P|Parasitic|Fortitude|Mitigate a small portion of damage taken and is instead dealt over 10 seconds. Gain lifesteal while taking delayed damage.|When you take damage, 10% of it is delayed and instead dealt over 10 seconds. While you take delayed damage, gain 5% lifesteal. Does not apply to damage under 10% of your max HP|When you take damage, 15% of it is delayed and instead dealt over 10 seconds. While you take delayed damage, gain 5% lifesteal. Does not apply to damage under 10% of your max HP|When you take damage, 20% of it is delayed and instead dealt over 10 seconds. While you take delayed damage, gain 5% lifesteal. Does not apply to damage under 10% of your max HP|When you take damage, 25% of it is delayed and instead dealt over 10 seconds. While you take delayed damage, gain 5% lifesteal. Does not apply to damage under 10% of your max HP|When you take damage, 30% of it is delayed and instead dealt over 10 seconds. While you take delayed damage, gain 5% lifesteal. Does not apply to damage under 10% of your max HP|When you take damage, 35% of it is delayed and instead dealt over 10 seconds. While you take delayed damage, gain 5% lifesteal. Does not apply to damage under 10% of your max HP
+P|Predator|Finesse|Increases damage after avoiding damage for a short time.|After not taking hostile damage for 15 seconds, deal +4% damage - bonus lost when hit.|After not taking hostile damage for 15 seconds, deal +8% damage - bonus lost when hit.|After not taking hostile damage for 15 seconds, deal +14% damage - bonus lost when hit.|After not taking hostile damage for 15 seconds, deal +20% damage - bonus lost when hit.|After not taking hostile damage for 15 seconds, deal +27% damage - bonus lost when hit.|After not taking hostile damage for 15 seconds, deal +35% damage - bonus lost when hit.
+P|Pulse|Finesse|Guarantees a critical hit after a number of hits. At higher ranks, also increases critical damage.|Every 10th hit with your weapon is a critical strike.|Every 9th hit with your weapon is a critical strike.|Every 8th hit with your weapon is a critical strike.|Every 7th hit with your weapon is a critical strike.\n+5% critical strike damage|Every 6th hit with your weapon is a critical strike.\n+10% critical strike damage|Every 5th hit with your weapon is a critical strike.\n+15% critical strike damage
+P|Rage|Brutality|Deal increased damage after taking damage.|Once every 50 seconds, when you take damage, deal +20% damage for 15 seconds.|Once every 40 seconds, when you take damage, deal +20% damage for 15 seconds.|Once every 30 seconds, when you take damage, deal +20% damage for 15 seconds.|Once every 25 seconds, when you take damage, deal +20% damage for 15 seconds.|Once every 20 seconds, when you take damage, deal +20% damage for 15 seconds.|Once every 15 seconds, when you take damage, deal +20% damage for 15 seconds.
+P|Ragehunter|Brutality|Increases damage against enraged Behemoths.|+5% damage vs enraged Behemoths|+10% damage vs enraged Behemoths|+15% damage vs enraged Behemoths|+20% damage vs enraged Behemoths|+30% damage vs enraged Behemoths|+40% damage vs enraged Behemoths
+P|Recycle|Finesse|Dealing repeated damage to the same part grants a stacking damage buff.|Dealing damage to the same part consecutively grants 10% increased damage. Stacks up to 1 times.|Dealing damage to the same part consecutively grants 10% increased damage. Stacks up to 2 times.|Dealing damage to the same part consecutively grants 10% increased damage. Stacks up to 3 times.|Dealing damage to the same part consecutively grants 10% increased damage. Stacks up to 4 times.|Dealing damage to the same part consecutively grants 10% increased damage. Stacks up to 5 times.|Dealing damage to the same part consecutively grants 10% increased damage. Stacks up to 6 times.
+P|Reduce|Brutality|Lowers attack speed but increases damage dealt.|Damage is increased by 10%.\nAttack Speed is adjusted by -5%.|Damage is increased by 15%.\nAttack Speed is adjusted by -10%.|Damage is increased by 20%.\nAttack Speed is adjusted by -15%.|Damage is increased by 30%.\nAttack Speed is adjusted by -20%.|Damage is increased by 40%.\nAttack Speed is adjusted by -25%.|Damage is increased by 50%.\nAttack Speed is adjusted by -30%.
+P|Relentless|Finesse|Increases the duration of your aether rush. At higher ranks, also increases the effects of aether rush.|Increase the duration of your aether rush by +20%.|Increase the duration of your aether rush by +30%.|Increase the duration of your aether rush by +50%.|Increase the effects of your aether rush by +40%.|Increase the effects of your aether rush by +70%.|Increase the effects of your aether rush by +100%.
+P|Reuse|Insight|Breaking a Behemoth part grants a small attack speed bonus, with a chance to get a much larger one that applies to your whole party.|Breaking or assisting in breaking a Behemoth Part has a 5% chance to grant all allies nearby 20% increased attack speed for 30 seconds. Else gain only 10% attack speed for self.|Breaking or assisting in breaking a Behemoth Part has a 15% chance to grant all allies nearby 20% increased attack speed for 30 seconds. Else gain only 10% attack speed for self.|Breaking or assisting in breaking a Behemoth Part has a 30% chance to grant all allies nearby 20% increased attack speed for 30 seconds. Else gain only 10% attack speed for self.|Breaking or assisting in breaking a Behemoth Part has a 50% chance to grant all allies nearby 20% increased attack speed for 30 seconds. Else gain only 10% attack speed for self.|Breaking or assisting in breaking a Behemoth Part has a 75% chance to grant all allies nearby 20% increased attack speed for 30 seconds. Else gain only 10% attack speed for self.|Breaking or assisting in breaking a Behemoth Part has a 90% chance to grant all allies nearby 20% increased attack speed for 30 seconds. Else gain only 10% attack speed for self.
+P|Roll|Alacrity|Staggering a Behemoth makes your next dodges cost no stamina.|Staggering a Behemoth makes your next 2 dodges cost no stamina.|Staggering a Behemoth makes your next 3 dodges cost no stamina.|Staggering a Behemoth makes your next 4 dodges cost no stamina.|Staggering a Behemoth makes your next 6 dodges cost no stamina.|Staggering a Behemoth makes your next 8 dodges cost no stamina.|Staggering a Behemoth makes your next 10 dodges cost no stamina.
+P|Rushdown|Finesse|Interrupting a Behemoth restores Stamina and grants Movespeed. At +6 also temporarily removes stamina costs.|Interrupting a Behemoth restores 30% of maximum stamina.\nInterrupting a Behemoth grants +10% movement speed for 10s.|Interrupting a Behemoth restores 40% of maximum stamina.\nInterrupting a Behemoth grants +20% movement speed for 10s.|Interrupting a Behemoth restores 50% of maximum stamina.\nInterrupting a Behemoth grants +20% movement speed for 10s.|Interrupting a Behemoth restores 75% of maximum stamina.\nInterrupting a Behemoth grants +40% movement speed for 10s.|Interrupting a Behemoth restores 100% of maximum stamina.\nInterrupting a Behemoth grants +40% movement speed for 10s.|Interrupting a Behemoth restores 100% of maximum stamina.\nInterrupting a Behemoth grants +40% movement speed for 10s.\nInterrupting a Behemoth removes all stamina costs for 10s.
+P|Savagery|Finesse|Increases damage against Wounded parts.|+20% damage vs wounded parts|+30% damage vs wounded parts|+40% damage vs wounded parts|+60% damage vs wounded parts|+80% damage vs wounded parts|+100% damage vs wounded parts
+P|Sharpened|Brutality|Percent increase to Part damage.|+5% part damage|+10% part damage|+15% part damage|+20% part damage\nAfter dodging through an attack, your next attack within 5 seconds deals +50% part damage|+25% part damage|+30% part damage\nAfter dodging through an attack, your next attack within 5 seconds deals +100% part damage
+P|Shellshock Resist|Fortitude|Protects against the explosion damage and status effect of Shellshock.|Reduces shellshocked explosion damage and status effect duration by 10%|Reduces shellshocked explosion damage and status effect duration by 20%|Reduces shellshocked explosion damage and status effect duration by 40%|Reduces shellshocked explosion damage and status effect duration by 60%|Reduces shellshocked explosion damage and status effect duration by 80%|Immune to shellshocked explosion damage and status effect
+P|Sprinter|Alacrity|Increases movespeed and reduces sprint cost.|+5% movement speed\n-10% reduced sprint cost|+7.5% movement speed\n-15% reduced sprint cost|+10% movement speed\n-20% reduced sprint cost|+12.5% movement speed\n-25% reduced sprint cost|+15% movement speed\n-30% reduced sprint cost|+17.5% movement speed\n-35% reduced sprint cost
+P|Stop|Brutality|Dodging through a Behemoth's physical attack deals stagger damage to its head.|Dodging through a Behemoth's physical attack deals 50 stagger damage to its head.|Dodging through a Behemoth's physical attack deals 75 stagger damage to its head.|Dodging through a Behemoth's physical attack deals 100 stagger damage to its head.|Dodging through a Behemoth's physical attack deals 150 stagger damage to its head.|Dodging through a Behemoth's physical attack deals 200 stagger damage to its head.|Dodging through a Behemoth's physical attack deals 250 stagger damage to its head.
+P|Strategist|Fortitude|Dodging through Behemoth attacks grants health shields to all Slayers.|After dodging through an attack, grant a 50 health shield to all Slayers|After dodging through an attack, grant a 75 health shield to all Slayers|After dodging through an attack, grant a 100 health shield to all Slayers|After dodging through an attack, grant a 125 health shield to all Slayers|After dodging through an attack, grant a 150 health shield to all Slayers|After dodging through an attack, grant a 175 health shield to all Slayers
+P|Stunning Vigour|Fortitude|Restores some health whenever a Behemoth is staggered.|After a Behemoth is staggered, heal for 50|After a Behemoth is staggered, heal for 75|After a Behemoth is staggered, heal for 100|After a Behemoth is staggered, heal for 125|After a Behemoth is staggered, heal for 150|After a Behemoth is staggered, heal for 200
+P|Sturdy|Fortitude|Prevents being staggered on a cooldown.|Prevents you from being staggered on a 30 second cooldown|Prevents you from being staggered on a 25 second cooldown|Prevents you from being staggered on a 20 second cooldown|Prevents you from being staggered on a 15 second cooldown|Prevents you from being staggered on a 10 second cooldown|Prevents you from being staggered on a 5 second cooldown
+P|Swift|Alacrity|Increases Movement Speed for all nearby Slayers when your weapon is sheathed. At higher levels, temporarily retains some of that increase after unsheathing.|While sheathed, grants +5% movement speed to all nearby Slayers|While sheathed, grants +10% movement speed to all nearby Slayers|While sheathed, grants +15% movement speed to all nearby Slayers|While sheathed, grants +20% movement speed to all nearby Slayers. Half of this effect persists on you for 15 seconds after unsheathing.|While sheathed, grants +25% movement speed to all nearby Slayers. Half of this effect persists on you for 15 seconds after unsheathing.|While sheathed, grants +30% movement speed to all nearby Slayers. Half of this effect persists on you for 15 seconds after unsheathing.
+P|Tactician|Finesse|After dodging through 3 attacks, grant all nearby slayers bonus wound damage.|After dodging through an attack 3 times, grant all nearby Slayers +15% wound damage based on their core damage for 15 seconds.|After dodging through an attack 3 times, grant all nearby Slayers +20% wound damage based on their core damage for 15 seconds.|After dodging through an attack 3 times, grant all nearby Slayers +25% wound damage based on their core damage for 15 seconds.|After dodging through an attack 3 times, grant all nearby Slayers +30% wound damage based on their core damage for 15 seconds.|After dodging through an attack 3 times, grant all nearby Slayers +35% wound damage based on their core damage for 15 seconds.|After dodging through an attack 3 times, grant all nearby Slayers +40% wound damage based on their core damage for 15 seconds.
+P|Tenacious|Brutality|Gain bonus damage based on current HP.|For every 100 current HP gain 0.3% bonus damage.|For every 100 current HP gain 0.7% bonus damage.|For every 100 current HP gain 1% bonus damage.|For every 100 current HP gain 1.3% bonus damage.|For every 100 current HP gain 1.7% bonus damage.|For every 100 current HP gain 2% bonus damage.
+P|Tough|Fortitude|Increases Max Health.|+50 max health\n+5% increased healing from all sources|+100 max health\n+10% increased healing from all sources|+150 max health\n+15% increased healing from all sources|+250 max health\n+25% increased healing from all sources|+350 max health\n+35% increased healing from all sources|+500 max health\n+50% increased healing from all sources
+P|Vampiric|Fortitude|Restores some health whenever a Behemoth part is Wounded.|After a Behemoth is wounded, heal for 50|After a Behemoth is wounded, heal for 75|After a Behemoth is wounded, heal for 100|After a Behemoth is wounded, heal for 125|After a Behemoth is wounded, heal for 150|After a Behemoth is wounded, heal for 200
+P|Warmth|Fortitude|Protects against Chilled status effect.|Reduces duration of Chilled status by 10%|Reduces duration of Chilled status by 20%|Reduces duration of Chilled status by 40%|Reduces duration of Chilled status by 60%|Reduces duration of Chilled status by 80%|Immune to being Chilled
+P|Water|Fortitude|Move like Water. Dodging through a Behemoth's attacks grants resolve and damage reduction against the next one.|After dodging through a Behemoth's Attack, you will be immune to stagger and take 10% less damage from the next Behemoth attack within 45 seconds.|After dodging through a Behemoth's Attack, you will be immune to stagger and take 20% less damage from the next Behemoth attack within 45 seconds.|After dodging through a Behemoth's Attack, you will be immune to stagger and take 30% less damage from the next Behemoth attack within 45 seconds.|After dodging through a Behemoth's Attack, you will be immune to stagger and take 60% less damage from the next Behemoth attack within 45 seconds.|After dodging through a Behemoth's Attack, you will be immune to stagger and take 80% less damage from the next Behemoth attack within 45 seconds.|After dodging through a Behemoth's Attack, you will be immune to stagger and take 100% less damage from the next Behemoth attack within 45 seconds.
+P|Weighted Strikes|Brutality|Adds a flat amount of Stagger damage on hit. At later ranks, allows more weapon attacks to interrupt.|+5 stagger damage|+10 stagger damage|+15 stagger damage|+20 stagger damage\nAfter dodging through an attack, your next attack within 5 seconds deals +200 stagger damage|+30 stagger damage|+40 stagger damage\nAfter dodging through an attack, your next attack within 5 seconds deals +400 stagger damage\nRanged swings and missiles interrupt unstable Behemoth attacks
+P|Zeal|Insight|Increases the effectiveness of Lantern abilities.|+15% Lantern ability effectiveness.|+25% Lantern ability effectiveness.|+35% Lantern ability effectiveness.|+45% Lantern ability effectiveness.|+55% Lantern ability effectiveness.|+65% Lantern ability effectiveness.
+W|Aether Strikers|Agents of Decay|Prismatic|Prismatic||Terra|Terra|0|weapons/agarus/AgentsOfDecay.png|Legendary Ability: Revive all Slayers in a large radius, granting them healing over time and immunity to stagger. Usable while downed.
+W|Chain Blades|Death Blossoms|Prismatic|Prismatic||Terra|Terra|0|weapons/agarus/DeathBlossoms.png|Legendary Ability: Revive all Slayers in a large radius, granting them healing over time and immunity to stagger. Usable while downed.
+W|Axe|Malignant Scourge|Prismatic|Prismatic||Terra|Terra|0|weapons/agarus/MalignantScourge.png|Legendary Ability: Revive all Slayers in a large radius, granting them healing over time and immunity to stagger. Usable while downed.
+W|War Pike|Parasitic Curse|Prismatic|Prismatic||Terra|Terra|0|weapons/agarus/ParasiticCurse.png|Legendary Ability: Revive all Slayers in a large radius, granting them healing over time and immunity to stagger. Usable while downed.
+W|Sword|Poisonous Thorn|Prismatic|Prismatic||Terra|Terra|0|weapons/agarus/PoisonousThorn.png|Legendary Ability: Revive all Slayers in a large radius, granting them healing over time and immunity to stagger. Usable while downed.
+W|Repeater|Tainted Needles|Prismatic|Prismatic||Terra|Terra|0|weapons/agarus/TaintedNeedles.png|Legendary Ability: Revive all Slayers in a large radius, granting them healing over time and immunity to stagger. Usable while downed.
+W|Hammer|Unsteady Ground|Prismatic|Prismatic||Terra|Terra|0|weapons/agarus/UnsteadyGround.png|Legendary Ability: Revive all Slayers in a large radius, granting them healing over time and immunity to stagger. Usable while downed.
+W|Axe|Glyph Weaver Axe|Brutality|Fortitude|Aetheric Attunement||Radiant|0|weapons/alyra/GlyphWeaverAxe.png|On lantern use, spawn a glyph based on your active glyph type that charges after three seconds. Once charged, the glyph will activate when a Behemoth makes contact.; Red Glyph: Deals 1500 radiant damage in a radius.; Blue Glyph: Grants 150 stacking shields that expire after 25s to slayers in a large radius (max 600 shields).; Jump to change the active glyph type. Glyphs expire after 10s.
+W|Chain Blades|Glyph Weaver Blades|Brutality|Fortitude|Aetheric Attunement||Radiant|0|weapons/alyra/GlyphWeaverBlades.png|On lantern use, spawn a glyph based on your active glyph type that charges after three seconds. Once charged, the glyph will activate when a Behemoth makes contact.; Red Glyph: Deals 1500 radiant damage in a radius.; Blue Glyph: Grants 150 stacking shields that expire after 25s to slayers in a large radius (max 600 shields).; Jump to change the active glyph type. Glyphs expire after 10s.
+W|Aether Strikers|Glyph Weaver Claws|Brutality|Fortitude|Aetheric Attunement||Radiant|0|weapons/alyra/GlyphWeaverClaws.png|On lantern use, spawn a glyph based on your active glyph type that charges after three seconds. Once charged, the glyph will activate when a Behemoth makes contact.; Red Glyph: Deals 1500 radiant damage in a radius.; Blue Glyph: Grants 150 stacking shields that expire after 25s to slayers in a large radius (max 600 shields).; Jump to change the active glyph type. Glyphs expire after 10s.
+W|Sword|Glyph Weaver Edge|Brutality|Fortitude|Aetheric Attunement||Radiant|0|weapons/alyra/GlyphWeaverEdge.png|On lantern use, spawn a glyph based on your active glyph type that charges after three seconds. Once charged, the glyph will activate when a Behemoth makes contact.; Red Glyph: Deals 1500 radiant damage in a radius.; Blue Glyph: Grants 150 stacking shields that expire after 25s to slayers in a large radius (max 600 shields).; Jump to change the active glyph type. Glyphs expire after 10s.
+W|Hammer|Glyph Weaver Maul|Brutality|Fortitude|Aetheric Attunement||Radiant|0|weapons/alyra/GlyphWeaverMaul.png|On lantern use, spawn a glyph based on your active glyph type that charges after three seconds. Once charged, the glyph will activate when a Behemoth makes contact.; Red Glyph: Deals 1500 radiant damage in a radius.; Blue Glyph: Grants 150 stacking shields that expire after 25s to slayers in a large radius (max 600 shields).; Jump to change the active glyph type. Glyphs expire after 10s.
+W|Repeater|Glyph Weaver Pistols|Brutality|Fortitude|Aetheric Attunement||Radiant|0|weapons/alyra/GlyphWeaverPistols.png|On lantern use, spawn a glyph based on your active glyph type that charges after three seconds. Once charged, the glyph will activate when a Behemoth makes contact.; Red Glyph: Deals 1500 radiant damage in a radius.; Blue Glyph: Grants 150 stacking shields that expire after 25s to slayers in a large radius (max 600 shields).; Jump to change the active glyph type. Glyphs expire after 10s.
+W|War Pike|Glyph Weaver Spear|Brutality|Fortitude|Aetheric Attunement||Radiant|0|weapons/alyra/GlyphWeaverSpear.png|On lantern use, spawn a glyph based on your active glyph type that charges after three seconds. Once charged, the glyph will activate when a Behemoth makes contact.; Red Glyph: Deals 1500 radiant damage in a radius.; Blue Glyph: Grants 150 stacking shields that expire after 25s to slayers in a large radius (max 600 shields).; Jump to change the active glyph type. Glyphs expire after 10s.
+W|Aether Strikers|Brawlers of Boreus|Brutality|Fortitude|Conditioning||Frost|0|weapons/boreus/BrawlersOfBoreus.png|After Surging, continually generate Frost Sprites for 6 seconds that grant your next attack +60 damage and minor frost damage (Max 4 Sprites)
+W|Hammer|Brutality of Boreus|Brutality|Fortitude|Conditioning||Frost|0|weapons/boreus/BrutalityOfBoreus.png|After spending ammo, generate generate 2 Frost Sprites that grant your next attack +60 damage and minor frost damage (Max 4 Sprites)
+W|Chain Blades|Destiny of Boreus|Brutality|Fortitude|Conditioning||Frost|0|weapons/boreus/DestinyOfBoreus.png|After spending ammo, generate generate 3 Frost Sprites that grant your next attack +60 damage and minor frost damage (Max 4 Sprites)
+W|Sword|Onus of Boreus|Brutality|Fortitude|Conditioning||Frost|0|weapons/boreus/OnusOfBoreus.png|Using your special continually generates Frost Sprites that grant your next attack +60 damage and minor frost damage (Max 4 Sprites)
+W|War Pike|Revolution of Boreus|Brutality|Fortitude|Conditioning||Frost|0|weapons/boreus/RevolutionOfBoreus.png|Storing or spending ammo continually generates Frost Sprites for 6 seconds that grant your next attack +60 damage and minor frost damage (Max 4 Sprites)
+W|Axe|Turmoil of Boreus|Brutality|Fortitude|Conditioning||Frost|0|weapons/boreus/TurmoilOfBoreus.png|After each charge attack level, generate 2 Frost Sprites that grant your next attack +60 damage and minor frost damage (Max 4 Sprites)
+W|Repeater|Voice of Boreus|Brutality|Fortitude|Conditioning||Frost|0|weapons/boreus/VoiceOfBoreus.png|The last 4 shots in your magazine generates Frost Sprites that grant your next attack +60 damage and minor frost damage (Max 4 Sprites)
+W|Chain Blades|Charred Blades|Finesse|Fortitude|Aetherhunter||Blaze|0|weapons/charrogg/CharredBlades.png|After spending 150 stamina, next attack emits a cone of flame that deals +200 blaze damage to each unique target within the cone
+W|Axe|Charred Cleaver|Brutality|Fortitude|Aetherhunter||Blaze|0|weapons/charrogg/CharredCleaver.png|After spending 100 stamina, next attack emits a cone of flame that deals +200 blaze damage to each unique target within the cone
+W|Hammer|Charred Crusher|Brutality|Fortitude|Aetherhunter||Blaze|0|weapons/charrogg/CharredCrusher.png|After spending 50 stamina, next attack emits a cone of flame that deals +200 blaze damage to each unique target within the cone
+W|Aether Strikers|Charred Hands|Finesse|Fortitude|Aetherhunter||Blaze|0|weapons/charrogg/CharredHands.png|After spending 75 stamina, next attack emits a cone of flame that deals +200 blaze damage to each unique target within the cone
+W|Repeater|Charred Pistols|Brutality|Fortitude|Aetherhunter||Blaze|0|weapons/charrogg/CharredPistols.png|After spending 50 stamina, next attack emits a cone of flame that deals +200 blaze damage to each unique target within the cone
+W|Sword|Charred Saber|Brutality|Fortitude|Aetherhunter||Blaze|0|weapons/charrogg/CharredSaber.png|After spending 75 stamina, next attack emits a cone of flame that deals +200 blaze damage to each unique target within the cone
+W|War Pike|Charred Spear|Finesse|Fortitude|Aetherhunter||Blaze|0|weapons/charrogg/CharredSpear.png|After spending 75 stamina, next attack emits a cone of flame that deals +200 blaze damage to each unique target within the cone
+W|Hammer|Molten Edict|Brutality|Prismatic|Berserker||Blaze|1|weapons/charrogg/MoltenEdict.png|Replaces all hammer blasts with unique fireball abilities that deal blaze damage.
+W|Aether Strikers|Chaos & Entropy|Prismatic|Prismatic||Radiant|Radiant|0|weapons/chronovore/ChaosAndEntropy.png|Legendary Ability: Rewind to your position 3 seconds prior to activation. Restores health and stamina lost in that time, and removes debuffs. Become invulnerable and gain increased move speed for 6 seconds. Usable while downed. Resets on Behemoth kill or after 90 seconds.
+W|Sword|Edge of Tomorrow|Prismatic|Prismatic||Radiant|Radiant|0|weapons/chronovore/EdgeOfTomorrow.png|Legendary Ability: Rewind to your position 3 seconds prior to activation. Restores health and stamina lost in that time, and removes debuffs. Become invulnerable and gain increased move speed for 6 seconds. Usable while downed. Resets on Behemoth kill or after 90 seconds.
+W|Axe|Existential Crisis|Prismatic|Prismatic||Radiant|Radiant|0|weapons/chronovore/ExistentialCrisis.png|Legendary Ability: Rewind to your position 3 seconds prior to activation. Restores health and stamina lost in that time, and removes debuffs. Become invulnerable and gain increased move speed for 6 seconds. Usable while downed. Resets on Behemoth kill or after 90 seconds.
+W|Hammer|History's Burden|Prismatic|Prismatic||Radiant|Radiant|0|weapons/chronovore/HistorysBurden.png|Legendary Ability: Rewind to your position 3 seconds prior to activation. Restores health and stamina lost in that time, and removes debuffs. Become invulnerable and gain increased move speed for 6 seconds. Usable while downed. Resets on Behemoth kill or after 90 seconds.
+W|War Pike|Millennium's End|Prismatic|Prismatic||Radiant|Radiant|0|weapons/chronovore/MillenniumsEnd.png|Legendary Ability: Rewind to your position 3 seconds prior to activation. Restores health and stamina lost in that time, and removes debuffs. Become invulnerable and gain increased move speed for 6 seconds. Usable while downed. Resets on Behemoth kill or after 90 seconds.
+W|Repeater|Temporal Mechanics|Prismatic|Prismatic||Radiant|Radiant|0|weapons/chronovore/TemporalMechanics.png|Legendary Ability: Rewind to your position 3 seconds prior to activation. Restores health and stamina lost in that time, and removes debuffs. Become invulnerable and gain increased move speed for 6 seconds. Usable while downed. Resets on Behemoth kill or after 90 seconds.
+W|Chain Blades|The Weeping Hours|Prismatic|Prismatic||Radiant|Radiant|0|weapons/chronovore/TheWeepingHours.png|Legendary Ability: Rewind to your position 3 seconds prior to activation. Restores health and stamina lost in that time, and removes debuffs. Become invulnerable and gain increased move speed for 6 seconds. Usable while downed. Resets on Behemoth kill or after 90 seconds.
+W|Sword|Thundering Blade|Brutality|Insight|Aetheric Attunement||Shock|0|weapons/drask/ThunderingBlade.png|30% damage vs Behemoth Tails
+W|Aether Strikers|Thundering Bolts|Finesse|Brutality|Aetheric Attunement||Shock|0|weapons/drask/ThunderingBolts.png|30% damage vs Behemoth Heads
+W|Chain Blades|Thundering Cutters|Finesse|Brutality|Aetheric Attunement||Shock|0|weapons/drask/ThunderingCutters.png|30% damage vs Behemoth Tails
+W|Repeater|Thundering Guns|Finesse|Fortitude|Aetheric Attunement||Shock|0|weapons/drask/ThunderingGuns.png|30% damage vs Behemoth Heads
+W|Hammer|Thundering Maul|Brutality|Fortitude|Aetheric Attunement||Shock|0|weapons/drask/ThunderingMaul.png|30% damage vs Behemoth Heads
+W|Axe|Thundering Scythe|Brutality|Fortitude|Aetheric Attunement||Shock|0|weapons/drask/ThunderingScythe.png|30% damage vs Behemoth Heads
+W|War Pike|Thundering Spear|Finesse|Brutality|Aetheric Attunement||Shock|0|weapons/drask/ThunderingSpear.png|30% damage vs Behemoth Tails
+W|Chain Blades|Ember Blades|Finesse|Alacrity|Evasive Fury||Blaze|0|weapons/embermane/EmberBlades.png|The 9th hit in quick succession deals +250 bonus part damage.
+W|Sword|Ember Cutlass|Finesse|Alacrity|Evasive Fury||Blaze|0|weapons/embermane/EmberCutlass.png|The 6th hit in a row deals +250% part damage
+W|Aether Strikers|Ember Fists|Finesse|Alacrity|Evasive Fury||Blaze|0|weapons/embermane/EmberFists.png|The 4th hit in a row deals +150% stagger damage
+W|Hammer|Ember Maul|Brutality|Alacrity|Evasive Fury||Blaze|0|weapons/embermane/EmberMaul.png|The 4th hit in a row deals +150% stagger damage
+W|War Pike|Ember Pike|Finesse|Alacrity|Evasive Fury||Blaze|0|weapons/embermane/EmberPike.png|The 7th hit in a row deals +300 wound damage
+W|Axe|Ember Scythe|Brutality|Alacrity|Evasive Fury||Blaze|0|weapons/embermane/EmberScythe.png|The 3rd hit in quick succession deals +250 bonus part damage.
+W|Repeater|Ember Shots|Finesse|Alacrity|Evasive Fury||Blaze|0|weapons/embermane/EmberShots.png|The 6th hit in a row deals +250% part damage
+W|Sword|Silver Sword|Fortitude|Brutality|Guardian,Galvanized||Frost|0|weapons/event/SilverSword.png|Passive: +50% Shield; +30% Healing; +300 Max Health\nUsing your special continually generates Frost Sprites that grant your next attack +60 damage and minor frost damage (Max 4 Sprites)
+W|Aether Strikers|The Golden Claws|Alacrity|Finesse|Bladestorm,Nimble||Radiant|0|weapons/event/TheGoldenClaws.png|Passive: +30% Part Damage -200 max health\nAfter dodging through an attack, your next attack within 5 seconds deals +150% part damage After dodging through an attack, your next attack within 5 seconds deals +150 stagger damage While below 25% of your maximum health, gain +15% attack speed
+W|Sword|Fenroar's Blade|Finesse|Brutality|Parasitic||Terra|0|weapons/fenroar/FenroarsBlade.png|On jumping, create a platform of stone in the air ahead of you that lasts for up to 3 seconds. Up to 2 jumps in a row can be performed before ability must be recharged. Activating Lantern refreshes the 2 jumps. Shortly after forming, the platform falls, dealing 250 Terra damage, and interrupting behemoths.
+W|War Pike|Fenroar's Branch|Finesse|Brutality|Parasitic||Terra|0|weapons/fenroar/FenroarsBranch.png|On jumping, create a platform of stone in the air ahead of you that lasts for up to 3 seconds. Up to 2 jumps in a row can be performed before ability must be recharged. Activating Lantern refreshes the 2 jumps. Shortly after forming, the platform falls, dealing 250 Terra damage, and interrupting behemoths.
+W|Repeater|Fenroar's Roots|Finesse|Brutality|Parasitic||Terra|0|weapons/fenroar/FenroarsRoots.png|On jumping, create a platform of stone in the air ahead of you that lasts for up to 3 seconds. Up to 2 jumps in a row can be performed before ability must be recharged. Activating Lantern refreshes the 2 jumps. Shortly after forming, the platform falls, dealing 250 Terra damage, and interrupting behemoths.
+W|Axe|Fenroar's Spine|Finesse|Brutality|Parasitic||Terra|0|weapons/fenroar/FenroarsSpine.png|On jumping, create a platform of stone in the air ahead of you that lasts for up to 3 seconds. Up to 2 jumps in a row can be performed before ability must be recharged. Activating Lantern refreshes the 2 jumps. Shortly after forming, the platform falls, dealing 250 Terra damage, and interrupting behemoths.
+W|Chain Blades|Fenroar's Thistles|Finesse|Brutality|Parasitic||Terra|0|weapons/fenroar/FenroarsThistles.png|On jumping, create a platform of stone in the air ahead of you that lasts for up to 3 seconds. Up to 2 jumps in a row can be performed before ability must be recharged. Activating Lantern refreshes the 2 jumps. Shortly after forming, the platform falls, dealing 250 Terra damage, and interrupting behemoths.
+W|Aether Strikers|Fenroar's Thorns|Finesse|Brutality|Parasitic||Terra|0|weapons/fenroar/FenroarsThorns.png|On jumping, create a platform of stone in the air ahead of you that lasts for up to 3 seconds. Up to 2 jumps in a row can be performed before ability must be recharged. Activating Lantern refreshes the 2 jumps. Shortly after forming, the platform falls, dealing 250 Terra damage, and interrupting behemoths.
+W|Hammer|Fenroar's Trunk|Finesse|Brutality|Parasitic||Terra|0|weapons/fenroar/FenroarsTrunk.png|On jumping, create a platform of stone in the air ahead of you that lasts for up to 3 seconds. Up to 2 jumps in a row can be performed before ability must be recharged. Activating Lantern refreshes the 2 jumps. Shortly after forming, the platform falls, dealing 250 Terra damage, and interrupting behemoths.
+W|Sword|Frostwülf's Bite|Insight|Fortitude|Galvanized||Frost|0|weapons/frostwulf/FrostwulfsBite.png|After using your Lantern ability, create a geyser that frequently deals 70 frost damage. Any Slayer moving through the geyser for the first time is granted a stackable 125 health shield that lasts for 25 seconds (max 600 shields).
+W|Repeater|Frostwülf's Chillers|Insight|Fortitude|Galvanized||Frost|0|weapons/frostwulf/FrostwulfsChillers.png|After using your Lantern ability, create a geyser that frequently deals 70 frost damage. Any Slayer moving through the geyser for the first time is granted a stackable 125 health shield that lasts for 25 seconds (max 600 shields).
+W|Axe|Frostwülf's Chomp|Insight|Fortitude|Galvanized||Frost|0|weapons/frostwulf/FrostwulfsChomp.png|After using your Lantern ability, create a geyser that frequently deals 70 frost damage. Any Slayer moving through the geyser for the first time is granted a stackable 125 health shield that lasts for 25 seconds (max 600 shields).
+W|War Pike|Frostwülf's Rip|Insight|Fortitude|Galvanized||Frost|0|weapons/frostwulf/FrostwulfsRip.png|After using your Lantern ability, create a geyser that frequently deals 70 frost damage. Any Slayer moving through the geyser for the first time is granted a stackable 125 health shield that lasts for 25 seconds (max 600 shields).
+W|Chain Blades|Frostwülf's Skinners|Insight|Fortitude|Galvanized||Frost|0|weapons/frostwulf/FrostwulfsSkinners.png|After using your Lantern ability, create a geyser that frequently deals 70 frost damage. Any Slayer moving through the geyser for the first time is granted a stackable 125 health shield that lasts for 25 seconds (max 600 shields).
+W|Hammer|Frostwülf's Slam|Insight|Fortitude|Galvanized||Frost|0|weapons/frostwulf/FrostwulfsSlam.png|After using your Lantern ability, create a geyser that frequently deals 70 frost damage. Any Slayer moving through the geyser for the first time is granted a stackable 125 health shield that lasts for 25 seconds (max 600 shields).
+W|Aether Strikers|Frostwülf's Tacklers|Insight|Fortitude|Galvanized||Frost|0|weapons/frostwulf/FrostwulfsTacklers.png|After using your Lantern ability, create a geyser that frequently deals 70 frost damage. Any Slayer moving through the geyser for the first time is granted a stackable 125 health shield that lasts for 25 seconds (max 600 shields).
+W|Axe|Recruit's Axe||||||0|weapons/generic/RecruitsAxe.png|
+W|Chain Blades|Recruit's Chain Blades||||||0|weapons/generic/RecruitsChainBlades.png|
+W|Hammer|Recruit's Hammer||||||0|weapons/generic/RecruitsHammer.png|
+W|Repeater|Recruit's Repeaters||||||0|weapons/generic/RecruitsRepeaters.png|
+W|Aether Strikers|Recruit's Strikers||||||0|weapons/generic/RecruitsStrikers.png|
+W|Sword|Recruit's Sword||||||0|weapons/generic/RecruitsSword.png|
+W|War Pike|Recruit's War Pike||||||0|weapons/generic/RecruitsWarPike.png|
+W|Repeater|The Twin Suns|Finesse|Prismatic|Evasive Fury|||1|weapons/generic/TheTwinSuns.png|Barrel: While Empowered, gain +40% critical strike chance instead of bonus damage.\nChamber: Load 8 Mag Bombs into your magazine. They attach to enemies and are detonated on Reload. The first Mag Bomb attached to each Behemoth part deals +300 damage.\nGrip: Dash in a direction, becoming invulnerable for the duration. After dodging through an attack, fire 6 mini-shots that always crit. While in Mag Bomb mode, fires 2 Mag Bombs instead.\nPrism: After a critical strike, reduce the cooldown of Mag Bomb mode by 3 seconds.
+W|Sword|Training Sword||||||0|weapons/generic/TrainingSword.png|
+W|Axe|Raging Bite|Brutality|Insight|Ragehunter|||0|weapons/gnasher/RagingBite.png|Periodically enter a rage, dealing +15% damage and gaining immunity to stagger. Taking damage causes you to enrage more quickly.
+W|Sword|Raging Blade|Insight|Fortitude|Ragehunter|||0|weapons/gnasher/RagingBlade.png|Periodically enter a rage, dealing +15% damage and gaining immunity to stagger. Taking damage causes you to enrage more quickly.
+W|Hammer|Raging Crash|Brutality|Insight|Ragehunter|||0|weapons/gnasher/RagingCrash.png|Periodically enter a rage, dealing +15% damage and gaining immunity to stagger. Taking damage causes you to enrage more quickly.
+W|War Pike|Raging Cruelty|Finesse|Insight|Ragehunter|||0|weapons/gnasher/RagingCruelty.png|Periodically enter a rage, dealing +15% damage and gaining immunity to stagger. Taking damage causes you to enrage more quickly.
+W|Aether Strikers|Raging Fists|Finesse|Insight|Ragehunter|||0|weapons/gnasher/RagingFists.png|Periodically enter a rage, dealing +15% damage and gaining immunity to stagger. Taking damage causes you to enrage more quickly.
+W|Repeater|Raging Repeaters|Finesse|Insight|Ragehunter|||0|weapons/gnasher/RagingRepeaters.png|Periodically enter a rage, dealing +15% damage and gaining immunity to stagger. Taking damage causes you to enrage more quickly.
+W|Chain Blades|Raging Teeth|Finesse|Insight|Ragehunter|||0|weapons/gnasher/RagingTeeth.png|Periodically enter a rage, dealing +15% damage and gaining immunity to stagger. Taking damage causes you to enrage more quickly.
+W|War Pike|Inferno's Arrow|Brutality|Brutality|Overpower||Blaze|0|weapons/hellion/InfernosArrow.png|The 15th hit in a row deals +200 damage and major blaze damage
+W|Hammer|Inferno's Burden|Brutality|Brutality|Overpower||Blaze|0|weapons/hellion/InfernosBurden.png|The 5th hit in a row deals +225 damage and major blaze damage
+W|Axe|Inferno's Decree|Brutality|Brutality|Overpower||Blaze|0|weapons/hellion/InfernosDecree.png|The 5th hit in a row deals +225 damage and major blaze damage
+W|Chain Blades|Inferno's Fangs|Brutality|Brutality|Overpower||Blaze|0|weapons/hellion/InfernosFangs.png|The 15th hit in a row deals +225 damage and major blaze damage
+W|Aether Strikers|Inferno's Flames|Brutality|Brutality|Overpower||Blaze|0|weapons/hellion/InfernosFlames.png|The 8th hit in a row deals +225 damage and major blaze damage
+W|Sword|Inferno's Razor|Brutality|Brutality|Overpower||Blaze|0|weapons/hellion/InfernosRazor.png|The 8th hit in a row deals +225 damage and major blaze damage
+W|Repeater|Inferno's Roar|Brutality|Brutality|Overpower||Blaze|0|weapons/hellion/InfernosRoar.png|The 10th hit in a row deals +225 damage and major blaze damage
+W|Axe|Kharabak's Claw|Brutality|Finesse|Deconstruction||Terra|0|weapons/kharabak/KharabaksClaw.png|Once charged, your next attack unleashes whirling blades that deal 75 terra damage. Additional attacks speed up the blades, which explode at the end of the duration and deal damage based on blade speed.
+W|Hammer|Kharabak's Jaw|Brutality|Finesse|Deconstruction||Terra|0|weapons/kharabak/KharabaksJaw.png|Once charged, your next attack unleashes whirling blades that deal 75 terra damage. Additional attacks speed up the blades, which explode at the end of the duration and deal damage based on blade speed.
+W|Repeater|Kharabak's Lights|Finesse|Alacrity|Bladestorm||Terra|0|weapons/kharabak/KharabaksLights.png|Once charged, your next attack unleashes whirling blades that deal 75 terra damage. Additional attacks speed up the blades, which explode at the end of the duration and deal damage based on blade speed.
+W|Aether Strikers|Kharabak's Pincers|Finesse|Alacrity|Bladestorm||Terra|0|weapons/kharabak/KharabaksPincers.png|Once charged, your next attack unleashes whirling blades that deal 75 terra damage. Additional attacks speed up the blades, which explode at the end of the duration and deal damage based on blade speed.
+W|Sword|Kharabak's Spur|Finesse|Alacrity|Bladestorm||Terra|0|weapons/kharabak/KharabaksSpur.png|Once charged, your next attack unleashes whirling blades that deal 75 terra damage. Additional attacks speed up the blades, which explode at the end of the duration and deal damage based on blade speed.
+W|War Pike|Kharabak's Sting|Finesse|Alacrity|Bladestorm||Terra|0|weapons/kharabak/KharabaksSting.png|Once charged, your next attack unleashes whirling blades that deal 75 terra damage. Additional attacks speed up the blades, which explode at the end of the duration and deal damage based on blade speed.
+W|Chain Blades|Kharabak's Wings|Finesse|Alacrity|Bladestorm||Terra|0|weapons/kharabak/KharabaksWings.png|Once charged, your next attack unleashes whirling blades that deal 75 terra damage. Additional attacks speed up the blades, which explode at the end of the duration and deal damage based on blade speed.
+W|Repeater|Sovereign's Decrees|Brutality|Insight|Sharpened||Terra|0|weapons/koshai/SovereignsDecrees.png|After not dealing damage for 4 seconds, your next 5 attacks deal +50% damage
+W|Hammer|Sovereign's Grudge|Brutality|Insight|Sharpened||Terra|0|weapons/koshai/SovereignsGrudge.png|After not dealing damage for 4 seconds, your next 2 attacks deal +50% damage.
+W|Chain Blades|Sovereign's Lash|Brutality|Insight|Sharpened||Terra|0|weapons/koshai/SovereignsLash.png|After not dealing damage for 4 seconds, your next 6 attacks deal +50% damage
+W|Aether Strikers|Sovereign's Sceptres|Brutality|Insight|Sharpened||Terra|0|weapons/koshai/SovereignsSceptres.png|After not dealing damage for 4 seconds, your next 5 attacks deal +50% damage
+W|War Pike|Sovereign's Sorrow|Brutality|Insight|Sharpened||Terra|0|weapons/koshai/SovereignsSorrow.png|After not dealing damage for 4 seconds, your next 5 attacks deal +50% damage
+W|Sword|Sovereign's Torment|Brutality|Insight|Sharpened||Terra|0|weapons/koshai/SovereignsTorment.png|After not dealing damage for 4 seconds, your next 4 attacks deal +50% damage
+W|Axe|Sovereign's Wrath|Brutality|Insight|Sharpened||Terra|0|weapons/koshai/SovereignsWrath.png|After not dealing damage for 4 seconds, your next 2 attacks deal +50% damage.
+W|Sword|Cyclonic Fury|Prismatic|Prismatic||Shock|Shock|0|weapons/malkarion/CyclonicFury.png|Legendary Ability: Teleport to a Behemoth, dealing Shock damage. Usable once, but resets on Behemoth kill.
+W|Repeater|Dynamic Deadlights|Prismatic|Prismatic||Shock|Shock|0|weapons/malkarion/DynamicDeadlights.png|Legendary Ability: Teleport to a Behemoth, dealing Shock damage. Usable once, but resets on Behemoth kill.
+W|Chain Blades|Electric Cruelties|Prismatic|Prismatic||Shock|Shock|0|weapons/malkarion/ElectricCruelties.png|Legendary Ability: Teleport to a Behemoth, dealing Shock damage. Usable once, but resets on Behemoth kill.
+W|Hammer|Galvanic Impact|Prismatic|Prismatic||Shock|Shock|0|weapons/malkarion/GalvanicImpact.png|Legendary Ability: Teleport to a Behemoth, dealing Shock damage. Usable once, but resets on Behemoth kill.
+W|Aether Strikers|Mistral Currents|Prismatic|Prismatic||Shock|Shock|0|weapons/malkarion/MistralCurrents.png|Legendary Ability: Teleport to a Behemoth, dealing Shock damage. Usable once, but resets on Behemoth kill.
+W|Axe|Terminal Voltage|Prismatic|Prismatic||Shock|Shock|0|weapons/malkarion/TerminalVoltage.png|Legendary Ability: Teleport to a Behemoth, dealing Shock damage. Usable once, but resets on Behemoth kill.
+W|War Pike|The Conductor|Prismatic|Prismatic||Shock|Shock|0|weapons/malkarion/TheConductor.png|Legendary Ability: Teleport to a Behemoth, dealing Shock damage. Usable once, but resets on Behemoth kill.
+W|Hammer|Nayzaga's Charge|Brutality|Insight|Savagery||Shock|0|weapons/nayzaga/NayzagasCharge.png|After a Behemoth is staggered, heal for 300
+W|War Pike|Nayzaga's Fang|Finesse|Insight|Barbed||Shock|0|weapons/nayzaga/NayzagasFang.png|+5% lifesteal vs wounded parts
+W|Sword|Nayzaga's Razor|Insight|Alacrity|Barbed||Shock|0|weapons/nayzaga/NayzagasRazor.png|When Behemoth part is broken, heal for 200
+W|Chain Blades|Nayzaga's Reach|Finesse|Insight|Barbed||Shock|0|weapons/nayzaga/NayzagasReach.png|When Behemoth part is broken, heal for 200
+W|Axe|Nayzaga's Scythe|Brutality|Insight|Savagery||Shock|0|weapons/nayzaga/NayzagasScythe.png|After landing perfectly charged attacks, heal for 100
+W|Aether Strikers|Nayzaga's Shockers|Finesse|Insight|Savagery||Shock|0|weapons/nayzaga/NayzagasShockers.png|After a Behemoth is staggered, heal for 300
+W|Repeater|Nayzaga's Spikes|Finesse|Insight|Savagery||Shock|0|weapons/nayzaga/NayzagasSpikes.png|When you fire the last shot in your magazine, heal for 25
+W|Sword|Pangar's Call|Brutality|Fortitude|Knockout King||Frost|0|weapons/pangar/PangarsCall.png|Once charged, your next attack places a frost brand that deals 2500 frost damage after 30 seconds. Slayers can destroy the brand, prematurely detonating it for 50% increased damage. Charges every 90 seconds.
+W|Chain Blades|Pangar's Claws|Finesse|Fortitude|Weighted Strikes||Frost|0|weapons/pangar/PangarsClaws.png|Once charged, your next attack places a frost brand that deals 2500 frost damage after 30 seconds. Slayers can destroy the brand, prematurely detonating it for 50% increased damage. Charges every 90 seconds.
+W|Axe|Pangar's Grace|Brutality|Fortitude|Knockout King||Frost|0|weapons/pangar/PangarsGrace.png|Once charged, your next attack places a frost brand that deals 2500 frost damage after 30 seconds. Slayers can destroy the brand, prematurely detonating it for 50% increased damage. Charges every 90 seconds.
+W|Repeater|Pangar's Nightmares|Finesse|Alacrity|Weighted Strikes||Frost|0|weapons/pangar/PangarsNightmares.png|Once charged, your next attack places a frost brand that deals 2500 frost damage after 30 seconds. Slayers can destroy the brand, prematurely detonating it for 50% increased damage. Charges every 90 seconds.
+W|Aether Strikers|Pangar's Punishers|Finesse|Fortitude|Knockout King||Frost|0|weapons/pangar/PangarsPunishers.png|Once charged, your next attack places a frost brand that deals 2500 frost damage after 30 seconds. Slayers can destroy the brand, prematurely detonating it for 50% increased damage. Charges every 90 seconds.
+W|Hammer|Pangar's Rampage|Brutality|Fortitude|Knockout King||Frost|0|weapons/pangar/PangarsRampage.png|Once charged, your next attack places a frost brand that deals 2500 frost damage after 30 seconds. Slayers can destroy the brand, prematurely detonating it for 50% increased damage. Charges every 90 seconds.
+W|War Pike|Pangar's Tooth|Finesse|Fortitude|Weighted Strikes||Frost|0|weapons/pangar/PangarsTooth.png|Once charged, your next attack places a frost brand that deals 2500 frost damage after 30 seconds. Slayers can destroy the brand, prematurely detonating it for 50% increased damage. Charges every 90 seconds.
+W|Axe|Call of the Firebird|Insight|Alacrity|Aetheric Evasion||Blaze|0|weapons/phaelanx/CallOfTheFirebird.png|Attack a Behemoth part to lock onto it and load a homing missile. Missile deals 175 damage and increases the damage of every other missile in the volley by 175. Deal damage to load up to a maximum of 3 additional missiles. Dodging fires all loaded missiles on the locked-on part. 45 second cooldown.
+W|Repeater|Eyes of the Firebird|Insight|Alacrity|Aetheric Evasion||Blaze|0|weapons/phaelanx/EyesOfTheFirebird.png|Attack a Behemoth part to lock onto it and load a homing missile. Missile deals 175 damage and increases the damage of every other missile in the volley by 175. Deal damage to load up to a maximum of 3 additional missiles. Dodging fires all loaded missiles on the locked-on part. 45 second cooldown.
+W|War Pike|Fate of the Firebird|Insight|Alacrity|Aetheric Evasion||Blaze|0|weapons/phaelanx/FateOfTheFirebird.png|Attack a Behemoth part to lock onto it and load a homing missile. Missile deals 175 damage and increases the damage of every other missile in the volley by 175. Deal damage to load up to a maximum of 3 additional missiles. Dodging fires all loaded missiles on the locked-on part. 45 second cooldown.
+W|Aether Strikers|Fists of the Firebird|Insight|Alacrity|Aetheric Evasion||Blaze|0|weapons/phaelanx/FistsOfTheFirebird.png|Attack a Behemoth part to lock onto it and load a homing missile. Missile deals 175 damage and increases the damage of every other missile in the volley by 175. Deal damage to load up to a maximum of 3 additional missiles. Dodging fires all loaded missiles on the locked-on part. 45 second cooldown.
+W|Hammer|Rage of the Firebird|Insight|Alacrity|Aetheric Evasion||Blaze|0|weapons/phaelanx/RageOfTheFirebird.png|Attack a Behemoth part to lock onto it and load a homing missile. Missile deals 175 damage and increases the damage of every other missile in the volley by 175. Deal damage to load up to a maximum of 3 additional missiles. Dodging fires all loaded missiles on the locked-on part. 45 second cooldown.
+W|Sword|Shriek of the Firebird|Insight|Alacrity|Aetheric Evasion||Blaze|0|weapons/phaelanx/ShriekOfTheFirebird.png|Attack a Behemoth part to lock onto it and load a homing missile. Missile deals 175 damage and increases the damage of every other missile in the volley by 175. Deal damage to load up to a maximum of 3 additional missiles. Dodging fires all loaded missiles on the locked-on part. 45 second cooldown.
+W|Chain Blades|Talons of the Firebird|Insight|Alacrity|Aetheric Evasion||Blaze|0|weapons/phaelanx/TalonsOfTheFirebird.png|Attack a Behemoth part to lock onto it and load a homing missile. Missile deals 175 damage and increases the damage of every other missile in the volley by 175. Deal damage to load up to a maximum of 3 additional missiles. Dodging fires all loaded missiles on the locked-on part. 45 second cooldown.
+W|Chain Blades|Quillshot's Bonehooks|Finesse|Fortitude|Acidic|||0|weapons/quillshot/QuillshotsBonehooks.png|
+W|Axe|Quillshot's Fury|Brutality|Fortitude|Acidic|||0|weapons/quillshot/QuillshotsFury.png|
+W|War Pike|Quillshot's Javelin|Finesse|Fortitude|Acidic|||0|weapons/quillshot/QuillshotsJavelin.png|
+W|Hammer|Quillshot's Roar|Brutality|Fortitude|Acidic|||0|weapons/quillshot/QuillshotsRoar.png|
+W|Aether Strikers|Quillshot's Shredders|Finesse|Fortitude|Acidic|||0|weapons/quillshot/QuillshotsShredders.png|
+W|Repeater|Quillshot's Stingers|Brutality|Fortitude|Acidic|||0|weapons/quillshot/QuillshotsStingers.png|
+W|Sword|Quillshot's Tusk|Finesse|Fortitude|Acidic|||0|weapons/quillshot/QuillshotsTusk.png|
+W|Hammer|Break of Dawn|Brutality|Alacrity|Cunning||Radiant|0|weapons/rezakiri/BreakOfDawn.png|12% chance for attacks to hit twice.
+W|Sword|Call of Dawn|Finesse|Insight|Cunning||Radiant|0|weapons/rezakiri/CallOfDawn.png|12% chance for attacks to hit twice.
+W|Repeater|Dawnstars|Finesse|Insight|Cunning||Radiant|0|weapons/rezakiri/Dawnstars.png|12% chance for attacks to hit twice.
+W|Axe|Edge of Dawn|Brutality|Alacrity|Cunning||Radiant|0|weapons/rezakiri/EdgeOfDawn.png|12% chance for attacks to hit twice.
+W|Chain Blades|Fangs of Dawn|Finesse|Brutality|Cunning||Radiant|0|weapons/rezakiri/FangsOfDawn.png|12% chance for attacks to hit twice.
+W|Aether Strikers|Hands of Dawn|Finesse|Brutality|Cunning||Radiant|0|weapons/rezakiri/HandsOfDawn.png|12% chance for attacks to hit twice.
+W|War Pike|Spire of Dawn|Finesse|Brutality|Cunning||Radiant|0|weapons/rezakiri/SpireOfDawn.png|12% chance for attacks to hit twice.
+W|War Pike|The Godhand|Brutality|Prismatic|Savagery||Radiant|1|weapons/rezakiri/TheGodhand.png|Channel a beam that deals increasing damage, up to 200%, while it continues to hit a target.
+W|Repeater|Stalker's Cries|Finesse|Insight|Assassin's Frenzy||Umbral|0|weapons/riftstalker/StalkersCries.png|Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.25% for 5 seconds. If 5 or more orbs are present, the bonus doubles.
+W|Axe|Stalker's Mercy|Finesse|Insight|Assassin's Frenzy||Umbral|0|weapons/riftstalker/StalkersMercy.png|Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.25% for 5 seconds. If 5 or more orbs are present, the bonus doubles.
+W|Hammer|Stalker's Price|Finesse|Insight|Assassin's Frenzy||Umbral|0|weapons/riftstalker/StalkersPrice.png|Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.25% for 5 seconds. If 5 or more orbs are present, the bonus doubles.
+W|Aether Strikers|Stalker's Scorn|Finesse|Insight|Assassin's Frenzy||Umbral|0|weapons/riftstalker/StalkersScorn.png|Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.25% for 5 seconds. If 5 or more orbs are present, the bonus doubles.
+W|War Pike|Stalker's Spike|Finesse|Insight|Assassin's Frenzy||Umbral|0|weapons/riftstalker/StalkersSpike.png|Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.25% for 5 seconds. If 5 or more orbs are present, the bonus doubles.
+W|Sword|Stalker's Strike|Finesse|Insight|Assassin's Frenzy||Umbral|0|weapons/riftstalker/StalkersStrike.png|Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.25% for 5 seconds. If 5 or more orbs are present, the bonus doubles.
+W|Chain Blades|Stalker's Trap|Finesse|Insight|Assassin's Frenzy||Umbral|0|weapons/riftstalker/StalkersTrap.png|Dealing damage has a chance (based on damage dealt) to generate a shadow orb that increases damage dealt by 2.25% for 5 seconds. If 5 or more orbs are present, the bonus doubles.
+W|Repeater|Sahvyt's Avengers|Finesse|Finesse|Pulse||Shock|0|weapons/sahvyt/SahvytsAvengers.png|Once charged, your next weapon swing/shot unleashes a boomerang projectile that frequently deals 325 shock damage to any target hit. Dodging through an attack reduces charge cooldown.
+W|Axe|Sahvyt's Cleaver|Finesse|Finesse|Pulse||Shock|0|weapons/sahvyt/SahvytsCleaver.png|Once charged, your next weapon swing/shot unleashes a boomerang projectile that frequently deals 325 shock damage to any target hit. Dodging through an attack reduces charge cooldown.
+W|Sword|Sahvyt's Cutlass|Finesse|Finesse|Pulse||Shock|0|weapons/sahvyt/SahvytsCutlass.png|Once charged, your next weapon swing/shot unleashes a boomerang projectile that frequently deals 325 shock damage to any target hit. Dodging through an attack reduces charge cooldown.
+W|Aether Strikers|Sahvyt's Grapplers|Finesse|Finesse|Pulse||Shock|0|weapons/sahvyt/SahvytsGrapplers.png|Once charged, your next weapon swing/shot unleashes a boomerang projectile that frequently deals 325 shock damage to any target hit. Dodging through an attack reduces charge cooldown.
+W|War Pike|Sahvyt's Javelin|Finesse|Finesse|Pulse||Shock|0|weapons/sahvyt/SahvytsJavelin.png|Once charged, your next weapon swing/shot unleashes a boomerang projectile that frequently deals 325 shock damage to any target hit. Dodging through an attack reduces charge cooldown.
+W|Hammer|Sahvyt's Maul|Finesse|Finesse|Pulse||Shock|0|weapons/sahvyt/SahvytsMaul.png|Once charged, your next weapon swing/shot unleashes a boomerang projectile that frequently deals 325 shock damage to any target hit. Dodging through an attack reduces charge cooldown.
+W|Chain Blades|Sahvyt's Pincers|Finesse|Finesse|Pulse||Shock|0|weapons/sahvyt/SahvytsPincers.png|Once charged, your next weapon swing/shot unleashes a boomerang projectile that frequently deals 325 shock damage to any target hit. Dodging through an attack reduces charge cooldown.
+W|Sword|Cry of the Shrike|Alacrity|Alacrity|Conditioning|||0|weapons/shrike/CryOfTheShrike.png|After dodging, your next attack deals +100 bonus damage and part damage
+W|Repeater|Eyes of the Shrike|Finesse|Alacrity|Conditioning|||0|weapons/shrike/EyesOfTheShrike.png|After dodging, your next attack deals +100 bonus damage and part damage
+W|Hammer|Fall of the Shrike|Brutality|Alacrity|Conditioning|||0|weapons/shrike/FallOfTheShrike.png|After dodging, your next attack deals +100 bonus damage and part damage
+W|Aether Strikers|Fists of the Shrike|Finesse|Alacrity|Conditioning|||0|weapons/shrike/FistsOfTheShrike.png|After dodging, your next attack deals +100 bonus damage and part damage
+W|Chain Blades|Flight of the Shrike|Finesse|Alacrity|Conditioning|||0|weapons/shrike/FlightOfTheShrike.png|After dodging, your next attack deals +100 bonus damage and part damage
+W|War Pike|Scream of the Shrike|Finesse|Alacrity|Conditioning|||0|weapons/shrike/ScreamOfTheShrike.png|After dodging, your next attack deals +100 bonus damage and part damage
+W|Axe|Song of the Shrike|Brutality|Alacrity|Conditioning|||0|weapons/shrike/SongOfTheShrike.png|After dodging, your next attack deals +100 bonus damage and part damage
+W|Chain Blades|Eyes of Night|Finesse|Insight|Cunning||Umbral|0|weapons/shrowd/EyesOfNight.png|When under 20% health, deal +50% damage
+W|Hammer|Fall of Night|Brutality|Insight|Cunning||Umbral|0|weapons/shrowd/FallOfNight.png|When under 20% health, deal +50% damage
+W|Repeater|Furies of the Night|Brutality|Insight|Cunning||Umbral|0|weapons/shrowd/FuriesOfTheNight.png|When under 20% health, deal +50% damage
+W|War Pike|Gyre of Night|Finesse|Insight|Cunning||Umbral|0|weapons/shrowd/GyreOfNight.png|When under 20% health, deal +50% damage
+W|Aether Strikers|Hands of Night|Finesse|Insight|Cunning||Umbral|0|weapons/shrowd/HandsOfNight.png|When under 20% health, deal +50% damage
+W|Axe|Reaper of Night|Brutality|Insight|Cunning||Umbral|0|weapons/shrowd/ReaperOfNight.png|When under 20% health, deal +50% damage
+W|Sword|The Hunger|Brutality|Prismatic|Ragehunter||Umbral|1|weapons/shrowd/TheHunger.png|Activate to enter Feast, taking damage over time but gaining significant lifesteal, attack speed, and creating aetheric waves with each attack that deal area damage.
+W|Sword|Verge of Night|Brutality|Insight|Cunning||Umbral|0|weapons/shrowd/VergeOfNight.png|When under 20% health, deal +50% damage
+W|Repeater|Skarn's Calamities|Brutality|Fortitude|Weighted Strikes||Terra|0|weapons/skarn/SkarnsCalamities.png|After using your lantern ability, grant a stackable 250 health shield that lasts for 25 seconds (max 600 shields).
+W|Axe|Skarn's Judgment|Brutality|Fortitude|Knockout King||Terra|0|weapons/skarn/SkarnsJudgment.png|After using your lantern ability, grant a stackable 250 health shield that lasts for 25 seconds (max 600 shields).
+W|Chain Blades|Skarn's Malice|Finesse|Fortitude|Weighted Strikes||Terra|0|weapons/skarn/SkarnsMalice.png|After using your lantern ability, grant a stackable 250 health shield that lasts for 25 seconds (max 600 shields).
+W|Sword|Skarn's Rancor|Brutality|Fortitude|Knockout King||Terra|0|weapons/skarn/SkarnsRancor.png|After using your lantern ability, grant a stackable 250 health shield that lasts for 25 seconds (max 600 shields).
+W|Aether Strikers|Skarn's Smashers|Finesse|Fortitude|Knockout King||Terra|0|weapons/skarn/SkarnsSmashers.png|After using your lantern ability, grant a stackable 250 health shield that lasts for 25 seconds (max 600 shields).
+W|War Pike|Skarn's Spite|Finesse|Fortitude|Weighted Strikes||Terra|0|weapons/skarn/SkarnsSpite.png|After using your lantern ability, grant a stackable 250 health shield that lasts for 25 seconds (max 600 shields).
+W|Hammer|Skarn's Vengeance|Brutality|Fortitude|Knockout King||Terra|0|weapons/skarn/SkarnsVengeance.png|After using your lantern ability, grant a stackable 250 health shield that lasts for 25 seconds (max 600 shields).
+W|Repeater|Winter Blasts|Finesse|Alacrity|Nimble||Frost|0|weapons/skraev/WinterBlasts.png|After dodging, drop 3 Ice Mines around you on a 30 second cooldown that deal 300 damage.
+W|Axe|Winter Gale|Brutality|Alacrity|Nimble||Frost|0|weapons/skraev/WinterGale.png|After dodging, drop 3 Ice Mines around you on a 30 second cooldown that deal 300 damage.
+W|Sword|Winter Ice|Finesse|Alacrity|Nimble||Frost|0|weapons/skraev/WinterIce.png|After dodging, drop 3 Ice Mines around you on a 30 second cooldown that deal 300 damage.
+W|Hammer|Winter Squall|Brutality|Alacrity|Nimble||Frost|0|weapons/skraev/WinterSquall.png|After dodging, drop 3 Ice Mines around you on a 30 second cooldown that deal 300 damage.
+W|War Pike|Winter Vortex|Finesse|Alacrity|Nimble||Frost|0|weapons/skraev/WinterVortex.png|After dodging, drop 3 Ice Mines around you on a 30 second cooldown that deal 300 damage.
+W|Chain Blades|Winter Winds|Finesse|Alacrity|Nimble||Frost|0|weapons/skraev/WinterWinds.png|After dodging, drop 3 Ice Mines around you on a 30 second cooldown that deal 300 damage.
+W|Aether Strikers|Winter Wolves|Finesse|Alacrity|Nimble||Frost|0|weapons/skraev/WinterWolves.png|After dodging, drop 3 Ice Mines around you on a 30 second cooldown that deal 300 damage.
+W|Chain Blades|Storm Blades|Finesse|Alacrity|Energized||Shock|0|weapons/stormclaw/StormBlades.png|After dodging through an attack, your attacks gain 100% bonus meter for +3 seconds
+W|Aether Strikers|Storm Breakers|Finesse|Alacrity|Aetheric Attunement||Shock|0|weapons/stormclaw/StormBreakers.png|After dodging though an attack, extend Mantra timeout by 3 seconds
+W|Axe|Storm Cutter|Brutality|Alacrity|Energized||Shock|0|weapons/stormclaw/StormCutter.png|After dodging through an attack, your attacks gain 100% bonus meter for +5 seconds
+W|Hammer|Storm Hammer|Brutality|Alacrity|Aetheric Attunement||Shock|0|weapons/stormclaw/StormHammer.png|After dodging through an attack, reload 3 aethercharged ammo
+W|War Pike|Storm Pike|Finesse|Alacrity|Energized||Shock|0|weapons/stormclaw/StormPike.png|After dodging through an attack, your attacks gain 100% bonus meter for +4 seconds
+W|Repeater|Storm Shooters|Brutality|Alacrity|Aetheric Attunement||Shock|0|weapons/stormclaw/StormShooters.png|On dodging through a Behemoth attack, Empowered Reload.
+W|Sword|Storm Sword|Finesse|Alacrity|Energized||Shock|0|weapons/stormclaw/StormSword.png|After dodging through an attack, your attacks gain 100% bonus meter for +4 seconds
+W|Repeater|Eldritch Torments|Prismatic|Prismatic||Umbral|Umbral|0|weapons/thrax/EldritchTorments.png|Legendary Ability: Deal umbral damage to nearby enemies and teleport high into the sky. Then choose a spot to slam down on to, dealing additional umbral damage. Usable once, but resets on Behemoth kill.
+W|Aether Strikers|Fractured Realities|Prismatic|Prismatic||Umbral|Umbral|0|weapons/thrax/FracturedRealities.png|Legendary Ability: Deal umbral damage to nearby enemies and teleport high into the sky. Then choose a spot to slam down on to, dealing additional umbral damage. Usable once, but resets on Behemoth kill.
+W|Axe|Mindsplitter|Prismatic|Prismatic||Umbral|Umbral|0|weapons/thrax/Mindsplitter.png|Legendary Ability: Deal umbral damage to nearby enemies and teleport high into the sky. Then choose a spot to slam down on to, dealing additional umbral damage. Usable once, but resets on Behemoth kill.
+W|Chain Blades|Night Terrors|Prismatic|Prismatic||Umbral|Umbral|0|weapons/thrax/NightTerrors.png|Legendary Ability: Deal umbral damage to nearby enemies and teleport high into the sky. Then choose a spot to slam down on to, dealing additional umbral damage. Usable once, but resets on Behemoth kill.
+W|Hammer|Sanity Check|Prismatic|Prismatic||Umbral|Umbral|0|weapons/thrax/SanityCheck.png|Legendary Ability: Deal umbral damage to nearby enemies and teleport high into the sky. Then choose a spot to slam down on to, dealing additional umbral damage. Usable once, but resets on Behemoth kill.
+W|War Pike|The Apocalypse Needle|Prismatic|Prismatic||Umbral|Umbral|0|weapons/thrax/TheApocalypseNeedle.png|Legendary Ability: Deal umbral damage to nearby enemies and teleport high into the sky. Then choose a spot to slam down on to, dealing additional umbral damage. Usable once, but resets on Behemoth kill.
+W|Sword|Voidbane|Prismatic|Prismatic||Umbral|Umbral|0|weapons/thrax/Voidbane.png|Legendary Ability: Deal umbral damage to nearby enemies and teleport high into the sky. Then choose a spot to slam down on to, dealing additional umbral damage. Usable once, but resets on Behemoth kill.
+W|Axe|Breakdown Voltage|Brutality|Finesse|Aetheric Evasion||Shock|0|weapons/thunderdeep/BreakdownVoltage.png|30% damage vs Behemoth Heads
+W|Chain Blades|Circuit Breakers|Brutality|Finesse|Aetheric Evasion||Shock|0|weapons/thunderdeep/CircuitBreakers.png|30% damage vs Behemoth Tails
+W|War Pike|Inverse Polarity|Brutality|Finesse|Aetheric Evasion||Shock|0|weapons/thunderdeep/InversePolarity.png|30% damage vs Behemoth Tails
+W|Hammer|Solid State|Brutality|Finesse|Aetheric Evasion||Shock|0|weapons/thunderdeep/SolidState.png|30% damage vs Behemoth Heads
+W|Aether Strikers|Surge Projectors|Brutality|Finesse|Aetheric Evasion||Shock|0|weapons/thunderdeep/SurgeProjectors.png|30% damage vs Behemoth Heads
+W|Sword|The Governor|Brutality|Finesse|Aetheric Evasion||Shock|0|weapons/thunderdeep/TheGovernor.png|30% damage vs Behemoth Tails
+W|Repeater|Throwing Sparks|Brutality|Finesse|Aetheric Evasion||Shock|0|weapons/thunderdeep/ThrowingSparks.png|30% damage vs Behemoth Heads
+W|Axe|Incinerator's Song|Prismatic|Prismatic||Blaze|Blaze|0|weapons/torgadoro/IncineratorsSong.png|Legendary Ability: Enter a rage, gaining new attacks for 15 seconds. Deals +25% damage when the target is below 50% health. Usable once, but resets on Behemoth kill.
+W|Hammer|Magma Quake|Prismatic|Prismatic||Blaze|Blaze|0|weapons/torgadoro/MagmaQuake.png|Legendary Ability: Enter a rage, gaining new attacks for 15 seconds. Deals +25% damage when the target is below 50% health. Usable once, but resets on Behemoth kill.
+W|War Pike|Pyroclastic Envoy|Prismatic|Prismatic||Blaze|Blaze|0|weapons/torgadoro/PyroclasticEnvoy.png|Legendary Ability: Enter a rage, gaining new attacks for 15 seconds. Deals +25% damage when the target is below 50% health. Usable once, but resets on Behemoth kill.
+W|Chain Blades|Scorching Agonies|Prismatic|Prismatic||Blaze|Blaze|0|weapons/torgadoro/ScorchingAgonies.png|Legendary Ability: Enter a rage, gaining new attacks for 15 seconds. Deals +25% damage when the target is below 50% health. Usable once, but resets on Behemoth kill.
+W|Aether Strikers|Tectonic Faults|Prismatic|Prismatic||Blaze|Blaze|0|weapons/torgadoro/TectonicFaults.png|Legendary Ability: Enter a rage, gaining new attacks for 15 seconds. Deals +25% damage when the target is below 50% health. Usable once, but resets on Behemoth kill.
+W|Sword|The Cauterizer|Prismatic|Prismatic||Blaze|Blaze|0|weapons/torgadoro/TheCauterizer.png|Legendary Ability: Enter a rage, gaining new attacks for 15 seconds. Deals +25% damage when the target is below 50% health. Usable once, but resets on Behemoth kill.
+W|Repeater|Volcanic Eruptions|Prismatic|Prismatic||Blaze|Blaze|0|weapons/torgadoro/VolcanicEruptions.png|Legendary Ability: Enter a rage, gaining new attacks for 15 seconds. Deals +25% damage when the target is below 50% health. Usable once, but resets on Behemoth kill.
+W|Chain Blades|Blizzard's Teeth|Prismatic|Prismatic||Frost|Frost|0|weapons/urska/BlizzardsTeeth.png|Legendary Ability: Create a Frost Shield that blocks hostile projectiles for 6 seconds. Damages and chills Behemoths that contact it (can interrupt).
+W|Hammer|Bomb Cyclone|Prismatic|Prismatic||Frost|Frost|0|weapons/urska/BombCyclone.png|Legendary Ability: Create a Frost Shield that blocks hostile projectiles for 6 seconds. Damages and chills Behemoths that contact it (can interrupt).
+W|War Pike|Cold Hell|Prismatic|Prismatic||Frost|Frost|0|weapons/urska/ColdHell.png|Legendary Ability: Create a Frost Shield that blocks hostile projectiles for 6 seconds. Damages and chills Behemoths that contact it (can interrupt).
+W|Repeater|Cryo-Cannons|Prismatic|Prismatic||Frost|Frost|0|weapons/urska/CryoCannons.png|Legendary Ability: Create a Frost Shield that blocks hostile projectiles for 6 seconds. Damages and chills Behemoths that contact it (can interrupt).
+W|Sword|Hypothermica|Prismatic|Prismatic||Frost|Frost|0|weapons/urska/Hypothermica.png|Legendary Ability: Create a Frost Shield that blocks hostile projectiles for 6 seconds. Damages and chills Behemoths that contact it (can interrupt).
+W|Aether Strikers|Ice Breakers|Prismatic|Prismatic||Frost|Frost|0|weapons/urska/IceBreakers.png|Legendary Ability: Create a Frost Shield that blocks hostile projectiles for 6 seconds. Damages and chills Behemoths that contact it (can interrupt).
+W|Axe|Permanent Frost|Prismatic|Prismatic||Frost|Frost|0|weapons/urska/PermanentFrost.png|Legendary Ability: Create a Frost Shield that blocks hostile projectiles for 6 seconds. Damages and chills Behemoths that contact it (can interrupt).
+W|Hammer|Valomyr's Burden|Brutality|Insight|Aetherhunter||Radiant|0|weapons/valomyr/ValomyrsBurden.png|Once charged, your next attack will deal 700 bonus radiant damage. Charge rate increases with current health.
+W|Axe|Valomyr's Decree|Brutality|Insight|Aetherhunter||Radiant|0|weapons/valomyr/ValomyrsDecree.png|Once charged, your next attack will deal 700 bonus radiant damage. Charge rate increases with current health.
+W|War Pike|Valomyr's Hope|Brutality|Insight|Aetherhunter||Radiant|0|weapons/valomyr/ValomyrsHope.png|Once charged, your next attack will deal 700 bonus radiant damage. Charge rate increases with current health.
+W|Repeater|Valomyr's Instincts|Brutality|Insight|Aetherhunter||Radiant|0|weapons/valomyr/ValomyrsInstincts.png|Once charged, your next attack will deal 700 bonus radiant damage. Charge rate increases with current health.
+W|Sword|Valomyr's Regard|Brutality|Insight|Aetherhunter||Radiant|0|weapons/valomyr/ValomyrsRegard.png|Once charged, your next attack will deal 700 bonus radiant damage. Charge rate increases with current health.
+W|Chain Blades|Valomyr's Revenge|Brutality|Insight|Aetherhunter||Radiant|0|weapons/valomyr/ValomyrsRevenge.png|Once charged, your next attack will deal 700 bonus radiant damage. Charge rate increases with current health.
+W|Aether Strikers|Valomyr's Visions|Brutality|Insight|Aetherhunter||Radiant|0|weapons/valomyr/ValomyrsVisions.png|Once charged, your next attack will deal 700 bonus radiant damage. Charge rate increases with current health.
+A|Torso|Agaric Bole|Agarus|Parasitic|Insight|0|Terra|Shock|armours/agarus/AgaricBole.png
+A|Arms|Agaric Branches|Agarus|Sturdy|Fortitude|0|Terra|Shock|armours/agarus/AgaricBranches.png
+A|Head|Agaric Canopy|Agarus|Parasitic|Fortitude|0|Terra|Shock|armours/agarus/AgaricCanopy.png
+A|Legs|Agaric Roots|Agarus|Fortress|Fortitude|0|Terra|Shock|armours/agarus/AgaricRoots.png
+A|Legs|Spellbound Boots|Alyra|Swift|Fortitude|0|Radiant|Umbral|armours/alyra/SpellboundBoots.png
+A|Arms|Spellbound Gauntlets|Alyra|Invigorated|Insight|0|Radiant|Umbral|armours/alyra/SpellboundGauntlets.png
+A|Head|Spellbound Hood|Alyra|Invigorated|Alacrity|0|Radiant|Umbral|armours/alyra/SpellboundHood.png
+A|Torso|Spellbound Wings|Alyra|Galvanized|Fortitude|0|Radiant|Umbral|armours/alyra/SpellboundWings.png
+A|Head|Boreal Epiphany|Boreus|Conditioning|Insight|0|Frost|Blaze|armours/boreus/BorealEpiphany.png
+A|Legs|Boreal March|Boreus|Tenacious|Finesse|0|Frost|Blaze|armours/boreus/BorealMarch.png
+A|Arms|Boreal Might|Boreus|Tenacious|Brutality|0|Frost|Blaze|armours/boreus/BorealMight.png
+A|Torso|Boreal Resolve|Boreus|Rage|Fortitude|0|Frost|Blaze|armours/boreus/BorealResolve.png
+A|Head|The Skullforge|Charrogg|Molten|Fortitude|1|Blaze|Frost|armours/charrogg/TheSkullforge.png|1.5% of damage dealt becomes a stamina shield (max 50) that depletes slowly after not dealing damage for a short period.
+A|Torso|Volcanic Aegis|Charrogg|Aetherhunter|Insight|0|Blaze|Frost|armours/charrogg/VolcanicAegis.png
+A|Arms|Volcanic Grips|Charrogg|Rage|Insight|0|Blaze|Frost|armours/charrogg/VolcanicGrips.png
+A|Head|Volcanic Helm|Charrogg|Sturdy|Fortitude|0|Blaze|Frost|armours/charrogg/VolcanicHelm.png
+A|Legs|Volcanic Treads|Charrogg|Tenacious|Brutality|0|Blaze|Frost|armours/charrogg/VolcanicTreads.png
+A|Arms|Chronogrips|Chronovore|Pulse|Fortitude|0|Radiant|Umbral|armours/chronovore/Chronogrips.png
+A|Head|Chronohelm|Chronovore|Zeal|Brutality|0|Radiant|Umbral|armours/chronovore/Chronohelm.png
+A|Torso|Chronoplate|Chronovore|Grace|Finesse|0|Radiant|Umbral|armours/chronovore/Chronoplate.png
+A|Legs|Chronotreads|Chronovore|Pulse|Finesse|0|Radiant|Umbral|armours/chronovore/Chronotreads.png
+A|Arms|Draskscale Gauntlets|Drask|Sharpened|Insight|0|Shock|Terra|armours/drask/DraskscaleGauntlets.png
+A|Legs|Draskscale Greaves|Drask|Fleet Footed|Insight|0|Shock|Terra|armours/drask/DraskscaleGreaves.png
+A|Head|Draskscale Helmet|Drask|Aetheric Attunement|Brutality|0|Shock|Terra|armours/drask/DraskscaleHelmet.png
+A|Torso|Draskscale Plate|Drask|Aetheric Attunement|Brutality|0|Shock|Terra|armours/drask/DraskscalePlate.png
+A|Torso|Fiery Breastplate|Embermane|Evasive Fury|Alacrity|0|Blaze|Frost|armours/embermane/FieryBreastplate.png
+A|Arms|Fiery Gauntlets|Embermane|Endurance|Finesse|0|Blaze|Frost|armours/embermane/FieryGauntlets.png
+A|Legs|Fiery Greaves|Embermane|Evasion|Fortitude|0|Blaze|Frost|armours/embermane/FieryGreaves.png
+A|Head|Fiery Helm|Embermane|Evasive Fury|Alacrity|0|Blaze|Frost|armours/embermane/FieryHelm.png
+A|Legs|Stonewood Boots|Fenroar|Stunning Vigour|Alacrity|0|Terra|Shock|armours/fenroar/StonewoodBoots.png
+A|Torso|Stonewood Chest Plate|Fenroar|Engineer|Finesse|0|Terra|Shock|armours/fenroar/StonewoodChestPlate.png
+A|Arms|Stonewood Gauntlets|Fenroar|Rushdown|Finesse|0|Terra|Shock|armours/fenroar/StonewoodGauntlets.png
+A|Head|Stonewood Great Helm|Fenroar|Stunning Vigour|Insight|0|Terra|Shock|armours/fenroar/StonewoodGreatHelm.png
+A|Arms|Wülf Claws|Frostwülf|Galvanized|Fortitude|0|Frost|Blaze|armours/frostwulf/WulfClaws.png
+A|Head|Wülf Mane|Frostwülf|Aegis|Brutality|0|Frost|Blaze|armours/frostwulf/WulfMane.png
+A|Legs|Wülf Paws|Frostwülf|Cascade|Brutality|0|Frost|Blaze|armours/frostwulf/WulfPaws.png
+A|Torso|Wülf Plate|Frostwülf|Aegis|Fortitude|0|Frost|Blaze|armours/frostwulf/WulfPlate.png
+A|Torso|Recruit's Breastplate||||0|||armours/generic/RecruitsBreastplate.png
+A|Arms|Recruit's Gloves||||0|||armours/generic/RecruitsGloves.png
+A|Legs|Recruit's Greaves||||0|||armours/generic/RecruitsGreaves.png
+A|Head|Recruit's Mask||||0|||armours/generic/RecruitsMask.png
+A|Head|Gnasher Cap|Gnasher|Tenacious|Fortitude|0|||armours/gnasher/GnasherCap.png
+A|Torso|Gnasher Cloak|Gnasher|Tough|Fortitude|0|||armours/gnasher/GnasherCloak.png
+A|Arms|Gnasher Grips|Gnasher|Ragehunter|Brutality|0|||armours/gnasher/GnasherGrips.png
+A|Legs|Gnasher Treads|Gnasher|Tough|Brutality|0|||armours/gnasher/GnasherTreads.png
+A|Arms|Hellplate Bracers|Hellion|Molten|Brutality|0|Blaze|Frost|armours/hellion/HellplateBracers.png
+A|Head|Hellplate Casque|Hellion|Ragehunter|Finesse|0|Blaze|Frost|armours/hellion/HellplateCasque.png
+A|Torso|Hellplate Cuirass|Hellion|Molten|Finesse|0|Blaze|Frost|armours/hellion/HellplateCuirass.png
+A|Legs|Hellplate Greaves|Hellion|Fortress|Brutality|0|Blaze|Frost|armours/hellion/HellplateGreaves.png
+A|Arms|Clutches of the Swarm|Kharabak|Conditioning|Alacrity|0|Terra|Shock|armours/kharabak/ClutchesOfTheSwarm.png
+A|Legs|Dance of the Swarm|Kharabak|Conditioning|Brutality|0|Terra|Shock|armours/kharabak/DanceOfTheSwarm.png
+A|Head|Eye of the Swarm|Kharabak|Assassin's Frenzy|Alacrity|0|Terra|Shock|armours/kharabak/EyeOfTheSwarm.png
+A|Torso|Shell of the Swarm|Kharabak|Bladestorm|Finesse|0|Terra|Shock|armours/kharabak/ShellOfTheSwarm.png
+A|Arms|Grasp of Thorns|Koshai|Evasive Fury|Brutality|0|Terra|Shock|armours/koshai/GraspOfThorns.png
+A|Torso|Mantle of Thorns|Koshai|Predator|Insight|0|Terra|Shock|armours/koshai/MantleOfThorns.png
+A|Legs|Stride of Thorns|Koshai|Predator|Insight|0|Terra|Shock|armours/koshai/StrideOfThorns.png
+A|Head|Visage of Thorns|Koshai|Agility|Finesse|0|Terra|Shock|armours/koshai/VisageOfThorns.png
+A|Head|Krolachi Shave||||0|||armours/krolachi/KrolachiShave.png
+A|Legs|Krolachi Shorts||||0|||armours/krolachi/KrolachiShorts.png
+A|Torso|Krolachi Tunic||||0|||armours/krolachi/KrolachiTunic.png
+A|Arms|Krolachi Wraps||||0|||armours/krolachi/KrolachiWraps.png
+A|Arms|Malkarion's Grasp|Malkarion|Predator|Finesse|0|Shock|Terra|armours/malkarion/MalkarionsGrasp.png
+A|Legs|Malkarion's March|Malkarion|Aetherhunter|Finesse|0|Shock|Terra|armours/malkarion/MalkarionsMarch.png
+A|Head|Malkarion's Sight|Malkarion|Grace|Alacrity|0|Shock|Terra|armours/malkarion/MalkarionsSight.png
+A|Torso|Malkarion's Soul|Malkarion|Aetherhunter|Finesse|0|Shock|Terra|armours/malkarion/MalkarionsSoul.png
+A|Head|Shocking Gaze|Nayzaga|Medic|Insight|0|Shock|Terra|armours/nayzaga/ShockingGaze.png
+A|Arms|Shocking Grasp|Nayzaga|Aetheric Attunement|Insight|0|Shock|Terra|armours/nayzaga/ShockingGrasp.png
+A|Torso|Shocking Heart|Nayzaga|Medic|Fortitude|0|Shock|Terra|armours/nayzaga/ShockingHeart.png
+A|Legs|Shocking Stride|Nayzaga|Energized|Fortitude|0|Shock|Terra|armours/nayzaga/ShockingStride.png
+A|Arms|Arms of Ice|Pangar|Knockout King|Fortitude|0|Frost|Blaze|armours/pangar/ArmsOfIce.png
+A|Head|Brow of Ice|Pangar|Knockout King|Brutality|0|Frost|Blaze|armours/pangar/BrowOfIce.png
+A|Torso|Core of Ice|Pangar|Fortress|Brutality|0|Frost|Blaze|armours/pangar/CoreOfIce.png
+A|Legs|Feet of Ice|Pangar|Overpower|Fortitude|0|Frost|Blaze|armours/pangar/FeetOfIce.png
+A|Arms|Phaelanx's Firearms|Phaelanx|Omnisurge|Insight|0|Blaze|Frost|armours/phaelanx/PhaelanxsFirearms.png
+A|Legs|Phaelanx's Heatsinks|Phaelanx|Fleet Footed|Alacrity|0|Blaze|Frost|armours/phaelanx/PhaelanxsHeatsinks.png
+A|Head|Phaelanx's Spearhead|Phaelanx|Omnisurge|Alacrity|0|Blaze|Frost|armours/phaelanx/PhaelanxsSpearhead.png
+A|Torso|Phaelanx's Vanguard|Phaelanx|Parasitic|Fortitude|0|Blaze|Frost|armours/phaelanx/PhaelanxsVanguard.png
+A|Legs|Quillspike Boots|Quillshot|Barbed|Finesse|0|||armours/quillshot/QuillspikeBoots.png
+A|Arms|Quillspike Grips|Quillshot|Barbed|Finesse|0|||armours/quillshot/QuillspikeGrips.png
+A|Torso|Quillspike Jacket|Quillshot|Savagery|Finesse|0|||armours/quillshot/QuillspikeJacket.png
+A|Head|Quillspike Mask|Quillshot|Savagery|Fortitude|0|||armours/quillshot/QuillspikeMask.png
+A|Head|Light's Crown|Rezakiri|Conduit|Finesse|0|Radiant|Umbral|armours/rezakiri/LightsCrown.png
+A|Arms|Light's Refuge|Rezakiri|Conduit|Finesse|0|Radiant|Umbral|armours/rezakiri/LightsRefuge.png
+A|Torso|Light's Virtue|Rezakiri|Cunning|Insight|0|Radiant|Umbral|armours/rezakiri/LightsVirtue.png
+A|Legs|Light's Walk|Rezakiri|Agility|Alacrity|0|Radiant|Umbral|armours/rezakiri/LightsWalk.png
+A|Head|Prismatic Grace|Rezakiri|Medic|Finesse|1|Radiant|Umbral|armours/rezakiri/PrismaticGrace.png|After reviving another player, grant them a Radiant Prism that blocks incoming damage for 5 seconds. The first time you take lethal damage, gain a Radiant Prism that blocks incoming damage for 10 seconds. While active, reviving another player fully restores both players but removes the Prism even at full danger. Resets on Behemoth kill or after 5 minutes.
+A|Head|Guise of the Rift|Riftstalker|Aetheric Attunement|Insight|0|Umbral|Radiant|armours/riftstalker/GuiseOfTheRift.png
+A|Arms|Hands of the Rift|Riftstalker|Evasion|Alacrity|0|Umbral|Radiant|armours/riftstalker/HandsOfTheRift.png
+A|Torso|Mantle of the Rift|Riftstalker|Conduit|Insight|0|Umbral|Radiant|armours/riftstalker/MantleOfTheRift.png
+A|Legs|Striders of the Rift|Riftstalker|Conduit|Alacrity|0|Umbral|Radiant|armours/riftstalker/StridersOfTheRift.png
+A|Legs|Bladed Boots|Sahvyt|Assassin's Frenzy|Finesse|0|Shock|Terra|armours/sahvyt/BladedBoots.png
+A|Arms|Bladed Gloves|Sahvyt|Relentless|Alacrity|0|Shock|Terra|armours/sahvyt/BladedGloves.png
+A|Torso|Bladed Jacket|Sahvyt|Tactician|Alacrity|0|Shock|Terra|armours/sahvyt/BladedJacket.png
+A|Head|Bladed Mask|Sahvyt|Tactician|Insight|0|Shock|Terra|armours/sahvyt/BladedMask.png
+A|Arms|Shrikedown Gloves|Shrike|Weighted Strikes|Alacrity|0|||armours/shrike/ShrikedownGloves.png
+A|Legs|Shrikedown Greaves|Shrike|Grace|Alacrity|0|||armours/shrike/ShrikedownGreaves.png
+A|Head|Shrikedown Helm|Shrike|Evasion|Finesse|0|||armours/shrike/ShrikedownHelm.png
+A|Torso|Shrikedown Plate|Shrike|Evasion|Alacrity|0|||armours/shrike/ShrikedownPlate.png
+A|Arms|Dark Embrace|Shrowd|Medic|Insight|0|Umbral|Radiant|armours/shrowd/DarkEmbrace.png
+A|Torso|Dark Marrow|Shrowd|Rage|Brutality|0|Umbral|Radiant|armours/shrowd/DarkMarrow.png
+A|Legs|Dark Path|Shrowd|Nine Lives|Insight|0|Umbral|Radiant|armours/shrowd/DarkPath.png
+A|Head|Dark Watch|Shrowd|Cunning|Brutality|0|Umbral|Radiant|armours/shrowd/DarkWatch.png
+A|Head|Tragic Echo|Shrowd|Rage|Brutality|1|Umbral|Radiant|armours/shrowd/TragicEcho.png|Upon death, become a shadow clone that deals +100% damage for 15 seconds. Resets on Behemoth kill or after 5 minutes.
+A|Torso|Heart of Stone|Skarn|Guardian|Fortitude|0|Terra|Shock|armours/skarn/HeartOfStone.png
+A|Arms|Might of Stone|Skarn|Fortress|Fortitude|0|Terra|Shock|armours/skarn/MightOfStone.png
+A|Legs|Pillars of Stone|Skarn|Guardian|Fortitude|0|Terra|Shock|armours/skarn/PillarsOfStone.png
+A|Head|Sight of Stone|Skarn|Tough|Fortitude|0|Terra|Shock|armours/skarn/SightOfStone.png
+A|Legs|Skraevwing Boots|Skraev|Adrenaline|Insight|0|Frost|Blaze|armours/skraev/SkraevwingBoots.png
+A|Arms|Skraevwing Gloves|Skraev|Aetheric Evasion|Alacrity|0|Frost|Blaze|armours/skraev/SkraevwingGloves.png
+A|Head|Skraevwing Helmet|Skraev|Fleet Footed|Alacrity|0|Frost|Blaze|armours/skraev/SkraevwingHelmet.png
+A|Torso|Skraevwing Jacket|Skraev|Adrenaline|Alacrity|0|Frost|Blaze|armours/skraev/SkraevwingJacket.png
+A|Legs|Lightning Boots|Stormclaw|Aetheric Evasion|Alacrity|0|Shock|Terra|armours/stormclaw/LightningBoots.png
+A|Arms|Lightning Gloves|Stormclaw|Catalyst|Alacrity|0|Shock|Terra|armours/stormclaw/LightningGloves.png
+A|Head|Lightning Helm|Stormclaw|Energized|Finesse|0|Shock|Terra|armours/stormclaw/LightningHelm.png
+A|Torso|Lightning Plate|Stormclaw|Energized|Alacrity|0|Shock|Terra|armours/stormclaw/LightningPlate.png
+A|Arms|Thrax's Embrace|Thrax|Nine Lives|Brutality|0|Umbral|Radiant|armours/thrax/ThraxsEmbrace.png
+A|Legs|Thrax's Guile|Thrax|Cunning|Finesse|0|Umbral|Radiant|armours/thrax/ThraxsGuile.png
+A|Head|Thrax's Scream|Thrax|Catalyst|Insight|0|Umbral|Radiant|armours/thrax/ThraxsScream.png
+A|Torso|Thrax's Shadow|Thrax|Cunning|Finesse|0|Umbral|Radiant|armours/thrax/ThraxsShadow.png
+A|Head|Thunderdeep's Capacitor|Thunderdeep Drask|Sharpened|Finesse|0|Shock|Terra|armours/thunderdeep/ThunderdeepsCapacitor.png
+A|Torso|Thunderdeep's Dynamo|Thunderdeep Drask|Aetheric Evasion|Insight|0|Shock|Terra|armours/thunderdeep/ThunderdeepsDynamo.png
+A|Arms|Thunderdeep's Regulators|Thunderdeep Drask|Zeal|Brutality|0|Shock|Terra|armours/thunderdeep/ThunderdeepsRegulators.png
+A|Legs|Thunderdeep's Turbines|Thunderdeep Drask|Zeal|Finesse|0|Shock|Terra|armours/thunderdeep/ThunderdeepsTurbines.png
+A|Arms|Timeweave Gauntlets||Overpower|Finesse|0|Radiant|Umbral|armours/timeweave/TimeweaveGauntlets.png
+A|Head|Timeweave Helm||Predator|Finesse|0|Radiant|Umbral|armours/timeweave/TimeweaveHelm.png
+A|Legs|Timeweave Leggings||Catalyst|Brutality|0|Radiant|Umbral|armours/timeweave/TimeweaveLeggings.png
+A|Torso|Timeweave Robes||Overpower|Brutality|0|Radiant|Umbral|armours/timeweave/TimeweaveRobes.png
+A|Head|Torgadoro's Apex|Torgadoro|Zeal|Insight|0|Blaze|Frost|armours/torgadoro/TorgadorosApex.png
+A|Arms|Torgadoro's Brawn|Torgadoro|Overpower|Brutality|0|Blaze|Frost|armours/torgadoro/TorgadorosBrawn.png
+A|Torso|Torgadoro's Core|Torgadoro|Knockout King|Brutality|0|Blaze|Frost|armours/torgadoro/TorgadorosCore.png
+A|Legs|Torgadoro's Gait|Torgadoro|Knockout King|Brutality|0|Blaze|Frost|armours/torgadoro/TorgadorosGait.png
+A|Legs|Adversary's Drive|Urska|Guardian|Insight|0|Frost|Blaze|armours/urska/AdversarysDrive.png
+A|Head|Adversary's Guile|Urska|Cascade|Insight|0|Frost|Blaze|armours/urska/AdversarysGuile.png
+A|Torso|Adversary's Pride|Urska|Cascade|Alacrity|0|Frost|Blaze|armours/urska/AdversarysPride.png
+A|Arms|Adversary's Wrath|Urska|Aetheric Evasion|Finesse|0|Frost|Blaze|armours/urska/AdversarysWrath.png
+A|Torso|Aegis of Valour|Valomyr|Nine Lives|Brutality|0|Radiant|Umbral|armours/valomyr/AegisOfValour.png
+A|Head|Crest of Valour|Valomyr|Lucent|Brutality|0|Radiant|Umbral|armours/valomyr/CrestOfValour.png
+A|Arms|Gauntlets of Valour|Valomyr|Lucent|Fortitude|0|Radiant|Umbral|armours/valomyr/GauntletsOfValour.png
+A|Legs|Greaves of Valour|Valomyr|Aetherhunter|Insight|0|Radiant|Umbral|armours/valomyr/GreavesOfValour.png
+L|Insight
+; Loadout and share data: lanterns (LT), omnicells (O), weapon parts (M), launcher ids (I). From the Dauntless Forever launcher's 1.14.7 gear data (AGPL-3.0).
+LT|LT_BASIC|Utility Lantern||lanterns/ico_equip_LT_Beginner.png|As basic as a lantern gets: it lights up and the radio works.
+LT|LT_BEGINNER|Recruit's Lantern||lanterns/ico_equip_LT_Beginner.png|A useful tool for Ramsgate's Recruits
+LT|LT_FULGAR|Drask's Eye|Insight|lanterns/ico_equip_LT_Fulgar.png|Hold: Fires a lightning bolt in a direction that deals 400 Shock damage multiple times as it passes through enemies.
+LT|LT_LERAWR|Embermane's Rapture|Insight|lanterns/ico_equip_LT_Lerawr.png|Hold: Create a fire ball in front of you that explodes after 4 seconds, dealing 3250 Blaze damage to nearby enemies.
+LT|LT_MCROLLIN|Pangar's Shine|Insight|lanterns/ico_equip_LT_McRollin.png|Hold: Create a frost pillar in front of you that deals 2500 Frost damage to nearby enemies over 10 seconds.
+LT|LT_MOONFACE|Shrike's Zeal|Insight|lanterns/ico_equip_LT_Moonface.png|Hold: Creates an aura that grants nearby Slayers 15% increased move speed and attack speed for 10 seconds.
+LT|LT_PAPER|Koshai's Bloom|Insight|lanterns/ico_equip_LT_Paper.png|Hold: Dash in a direction, deal 2250 Terra damage to nearby enemies upon arrival, and gain 15% lifesteal for 10 seconds.
+LT|LT_ROCK|Skarn's Defiance|Insight|lanterns/ico_equip_LT_Rock.png|Hold: Surrounds the slayer in swirling stone that deals 2500 Terra damage to nearby for 10 seconds. Also generates 30 hit point shields per second that expire after 25 seconds. (Max 600 shields)
+LT|LT_TRIALS_00|Broadsides Lantern|Insight|lanterns/ico_equip_LT_trials_00.png|Hold: Drop a bomb from above that explodes after 1 second. Deals 2750 damage and can interrupt Behemoths.
+O|PR_BASTION|Bastion|omnicells/icon_omnicell_bastion.png|Active: Leap and slam the ground, using up all your shields in a terra blast that deals 200% of the shields used. Cooldown 20s.\n\nPassive: Shields you receive are 15% stronger. Dealing damage can give you a stacking 25 shield (lasts 25s, up to 500).
+O|PR_DISCIPLINE|Discipline|omnicells/icon_omnicell_discipline.png|Active: A parrying punch for 200 blaze damage. A successful parry deals +300% damage and gives a Flaming Fist stack (up to 4). Cooldown 17s.\n\nPassive: +8% critical chance and critical damage, but healing is halved. At max Flaming Fist stacks you become Disciplined for 40s: +50% critical chance, +100% damage taken.
+O|PR_ICEBORNE|Iceborne|omnicells/icon_omnicell_iceborne.png|Active: Throw an ice lance for 750 frost damage (double against full-health targets). Gives stagger immunity and +10% lifesteal for 8s, and interrupts unstable attacks. Cooldown 60s.\n\nPassive: +100 max health, +1% lifesteal and 5% damage reduction, with more for every 150 missing health. Taking damage cuts the cooldown by 5s (once every 5s).
+O|PR_TEMPEST|Tempest|omnicells/icon_omnicell_tempest.png|Active: Spend a Velocity stack to dash for 450 shock damage, aimed at unbroken parts. The damage grows with your movement speed. Cooldown 6s.\n\nPassive: +10% attack speed. Dodging through an attack gives a Velocity stack (up to 5, 45s each, +3% movement speed per stack).
+O|PR_DARKNESS|Revenant|omnicells/icon_omnicell_darkness.png|Active (Umbral Pact): Sacrifice up to 500 health to enter Revenant State and create a Void Orb. Every 100 health lost sends out a tendril for 700 umbral damage that drops another Void Orb on hit. Tendrils can interrupt unstable attacks. Cooldown 10s.\n\nVoid Orb: Touch it for +1 held MIGHT, +1 max MIGHT and +1s of Revenant State.\n\nPassive: +2% lifesteal. Revenant State blocks all healing for 15s. When it ends, heal 115 over 10s for each Void Orb collected, and the MIGHT gained goes away.
+O|PR_FRANK|Artificer|omnicells/icon_omnicell_frank.png|Active (Command): Your drone acts on what you aim at. Slayer: removes negative effects and gives Artificer Aura for 15s. Ground: a wall that blocks projectiles and gives nearby Slayers the aura for 15s. Behemoth: marks a part to take +15% damage for 15s. Downed Slayer: revives them and gives the aura (once every 90s). Cooldown 20s.\n\nArtificer Aura: Heals 10 per second. At full health it gives 10 shields per second instead (lasts 25s, up to 400).\n\nPassive: The aura's healing and shields go up by 1 for every 150 health you have when you use it.
+M|PART_AC_PASSIVE_MASTERY_01|Aether Strikers|part2|Cyclonic Strikeplate|parts/ico_mastery_cyclonicstrikeplate.png|Tempest Form duration increased by 10 seconds. When Tempest Form has less than 10 seconds remaining, deal +15% part damage.
+M|PART_AC_PASSIVE_MASTERY_02|Aether Strikers|part2|Echo Bracedriver|parts/ico_mastery_echobracebreaker.png|Critical strikes increase the damage dealt by Karma Breaker's damage over time by 10% until the debuff ends or is refreshed
+M|PART_AC_PASSIVE_MASTERY_03|Aether Strikers|part2|Inertial Fistguard|parts/ico_mastery_Inertialfistguard.png|Surge deals +25% damage. After surging, gain +5% movespeed for 8 seconds. Stacks up to 3 times.
+M|PART_AC_SPECIAL_DEFAULT|Aether Strikers|part|Adamant Bolt|parts/ico_mastery_AS_beam.png|Unleash energy in a focused blast, dealing 900 damage to the first enemy hit. Deals up to +100% damage when Tempest Form and Karma Breaker's effects are active.
+M|PART_AC_SPECIAL_MASTERY|Aether Strikers|part|Titan's Crash|parts/ico_mastery_AS_smash.png|Unleash energy forward in a pressure wave, dealing 500 damage to the closest target and 166 damage to up to 2 other nearby targets. Deals up to +100% damage when Tempest Form and Karma Breaker's effects are active.
+M|PART_CB_PASSIVE_BLENDER|Chain Blades|part2|Hurricane Blades|parts/ico_mastery_selfsharpening.png|Using Blade Spin grants stacking on-next hit damage that is consumed when using other attacks.
+M|PART_CB_PASSIVE_DASH_AGGRESSION|Chain Blades|part2|Lightweight Chain|parts/ico_mastery_aerodynamic.png|Increase the length of your chains by +25%. Your Chain Pull deals +25% damage and generates an additional 20 meter.
+M|PART_CB_PASSIVE_SWINGING_CRIT|Chain Blades|part2|Serrated Blades|parts/ico_mastery_selfsharpening.png|Bladed attacks have a chance to cause your next 4 lacerating attacks to deal +50% wound damage.
+M|PART_CB_PASSIVE_TRIALS_01|Chain Blades|part2|Momentum Blades|parts/ico_mastery_momentumblades_6_1.png|After using a special, your next special use within 4 seconds consumes no momentum.
+M|PART_CB_PASSIVE_TRIALS_02|Chain Blades|part2|Demolition Blades|parts/ico_ladyluck_chainblade_1.png|Deal +50% damage to minions, fauna, and objects created by Behemoths. On killing a minion, fauna, or object, gain 1 momentum.
+M|PART_CB_SPECIAL_DEFAULT|Chain Blades|part|Reaper's Dance|parts/ico_mastery_chainpullpush.png|
+M|PART_CB_SPECIAL_INSATIABLE_DANCE|Chain Blades|part|Insatiable Dance|parts/ico_mastery_insatiabledance.png|Push off a nearby target with invulnerability, then use primary or secondary attacks to perform a follow up. Primary: A dash attack to the target that consumes 1 momentum. Secondary: A spinning slam that consumes all momentum to heal you and create a 150 health healing orb for each momentum consumed. Targets at or healed to full health gain +5% damage for 10 seconds, stacking up to 4 times. (Consume 1 momentum if no follow up is performed.)
+M|PART_CB_SPECIAL_RIFTSTRIKE|Chain Blades|part|Cruel Riftstrike|parts/ico_mastery_riftstrike.png|
+M|PART_DP_GRIP_DEFAULT|Repeater|part2|Captain's Grip|parts/Pistol_part_grip_ostian.png|Launches a collectible buff a short distance, granting 15% increased attack speed for 15 seconds when collected. Empowered: Grants the same buff to all Slayers.
+M|PART_DP_GRIP_EXOTIC_BOMBS|Repeater|part2|Twin Suns Grip|parts/ico_mastery_stickybomb.png|Dash in a direction, becoming invulnerable for the duration. After dodging through an attack, fire 6 mini-shots that always crit. While in Mag Bomb mode, fires 2 Mag Bombs instead.
+M|PART_DP_GRIP_MINE|Repeater|part2|Saboteur's Grip|parts/Pistol_part_grip_blaze.png|Launches an explosive mine that deals 400 damage. Mine charges after a short period, increasing damage to 700. Empowered: Deals 900 damage when charged and can interrupt Behemoths.
+M|PART_DP_PASSIVE_DOUBLE_SHOT_DAMAGE|Repeater|part3|Capacitive Magazine|parts/ico_mastery_highcalibermagazine.png|Using an ability returns 8 standard ammo to the magazine.
+M|PART_DP_PASSIVE_LONG_RANGE|Repeater|part3|Scoped Sights|parts/ico_mastery_scopedsights.png|Increases damage falloff range by 25%.
+M|PART_DP_PASSIVE_LOW_AMMO_CRIT|Repeater|part3|Lucky Magazine|parts/ico_mastery_luckymagazine.png|Grants 2% critical strike chance for each round missing from the magazine.
+M|PART_DP_PASSIVE_LOW_AMMO_MOVESPEED|Repeater|part3|Lightweight Frame|parts/ico_mastery_lightweightframe.png|Gain 20% increased movespeed when at 6 or less ammo.
+M|PART_DP_PASSIVE_MARKSMAN_DAMAGE|Repeater|part3|Precision Sights|parts/ico_mastery_precisionsights.png|Deal 8 increased damage when attacking the same part multiple times. Stacks up to 5 times.
+M|PART_DP_PASSIVE_PDODGE_COOLDOWNS|Repeater|part3|Extraction Catalyst|parts/ico_mastery_extractioncatalyst.png|Reduce both ability cooldowns by 2 seconds when dodging through behemoth attacks.
+M|PART_DP_PASSIVE_TRIALS_01|Repeater|part3|Tactician's Magazine|parts/ico_mastery_tacticiansmagazine_6_1.png|Empowered Reloading at exactly 0 ammo decreases the cooldown of both abilities by 4 seconds.
+M|PART_DP_PASSIVE_TRIALS_02|Repeater|part3|Demolition Sights|parts/ico_ladyluck_repeater_2.png|Deal +50% damage to minions, fauna, and objects created by Behemoths. While empowered, bonus increased to +100%.
+M|PART_DP_RECEIVER_DEFAULT|Repeater|part|Salvo Chamber|parts/Pistol_part_receiver_ostian.png|Fires an explosive missile in a line, dealing 450 damage in an area upon impact. Empowered: Fires 3 missiles in a spread and deals increased damage.
+M|PART_DP_RECEIVER_EXOTIC_BOMBS|Repeater|part|Twin Suns Chamber|parts/ico_mastery_stickybomb.png|Load 8 Mag Bombs into your magazine. They attach to enemies and are detonated on Reload. The first Mag Bomb attached to each Behemoth part deals +300 damage.
+M|PART_DP_RECEIVER_PART_MARKER|Repeater|part|Marksman Chamber|parts/Pistol_part_receiver_receiver.png|Fires a shot in a line, dealing 250 damage (350 Empowered) to the first Behemoth hit. If a part is struck, that part takes 25% more core and part damage from Shots for 10 seconds. Empowered: Damage bonus increased to 60%, and 25% to all allies.
+M|PART_DP_RECEIVER_PIERCING|Repeater|part|Full-Bore Chamber|parts/Pistol_part_receiver_blaze.png|Fires a piercing bolt in a line, dealing damage thats falls as it travels. Empowered: Deals greatly increased damage and pushes the slayer backwards.
+M|PART_EB_PASSIVE_DODGE_ATTACK|Sword|part2|Recursive Hilt|parts/ico_mastery_bladeoftheslasher_6_1.png|Dealing damage with Bladerush restores 20 stamina and generates 3 Valour over 9 seconds. Does not stack.
+M|PART_EB_PASSIVE_METER|Sword|part2|Charged Swordfocus|parts/ico_mastery_perpetualbladecore.png|Instead of dealing damage over time, Resounding Echo deals damage once after it expires and deals +35% total damage.
+M|PART_EB_PASSIVE_STAGGERPROOF|Sword|part2|Mending Bladecore|parts/ico_mastery_mendingbladecore.png|Each Valour gained or spent restores 30 health.
+M|PART_EB_PASSIVE_TRIALS_01|Sword|part2|Keen Edge|parts/ico_mastery_keenedge.png|After dealing damage with the Bladesurge projectile, increase your movement speed by 25% for 10 seconds. Additionally, after the Bladesurge projectile travels a short distance, the damage is increased by 100%.
+M|PART_EB_PASSIVE_TRIALS_02|Sword|part2|Dynamic Bladecore|parts/ico_ladyluck_sword_1.png|After using any Valour combo, your next Valour combo within 5 seconds deals +30% damage.
+M|PART_EB_SPECIAL_CROWBEAR_EXOTIC|Sword|part|Feast|parts/ico_mastery_hunger.png|Hunger - Activate at full meter to enter the Feast, gaining the effects of Valiant Overdrive, +25% damage and +12% lifesteal. Health is constantly drained. Dashing also grants invulnerability.
+M|PART_EB_SPECIAL_DEFAULT|Sword|part|Valiant Overdrive|parts/ico_mastery_valiantoverdrive.png|Activate at full meter to enter Overdrive, gaining +20% attack speed and causing attacks to deal +60-80 aoe damage. Grants 1 Valour immediately and then 1 Valour every 4 seconds. Reactivate to dash in a direction (Costs 1 Valour).
+M|PART_EB_SPECIAL_PARRY|Sword|part|Avenging Overdrive|parts/ico_mastery_defensiveoverdrive.png|Activate at full meter to enter Overdrive, gaining +20% attack speed and causing attacks to deal +60-80 aoe damage. Reactivate to parry and riposte a Behemoth attack, dealing 800 damage and granting 1 Valour when successful (2 second cooldown).
+M|PART_EB_SPECIAL_SPIN|Sword|part|Ardent Cyclone|parts/ico_mastery_ardentcyclone.png|Activate at full meter to spin, becoming unstaggerable and dealing 80 damage constantly to nearby enemies. Grants 1 Valour every 4 seconds. Reactivate to slash in a direction, dealing 500 + (20 x number of spin hits) to the first enemy hit.
+M|PART_GA_PASSIVE_CHARGE_AOE|Axe|part2|Volatile Axecore|parts/ico_mastery_volatileaxecore.png|Charging attack deals aoe damage to nearby enemies at each charge level.
+M|PART_GA_PASSIVE_CHARGING_MOVESPEED|Axe|part2|Lightweight Haft|parts/ico_mastery_lightweighthaft.png|Movespeed while charging Horizontal Attacks is now increased instead of decreased and costs no stamina to maintain.
+M|PART_GA_PASSIVE_METER|Axe|part2|Overcharged Cylinder|parts/ico_mastery_overchargedcylinder.png|Determination can now stack up to 4 times.
+M|PART_GA_PASSIVE_TRIALS_01|Axe|part2|Railsplitter's Canteen|parts/ico_mastery_railsplitterscanteen_6_1.png|Tonics consumed while your axe is thrown have +50% effectiveness.
+M|PART_GA_PASSIVE_TRIALS_02|Axe|part2|Furious Axecore|parts/ico_ladyluck_axe_1.png|Perfectly charged attacks grants +15 meter on hit, but no longer grant resolve
+M|PART_GA_SPECIAL_DEFAULT|Axe|part|Flight of Ruin|parts/ico_mastery_flightofruin.png|Throw the axe, dealing 60 damage constantly and gaining 2 meter per hit. Reactivate to recall it and perform a powerful attack that deals up to 500 damage (further increased by determinaton) and gain 15 meter.
+M|PART_GA_SPECIAL_SKILLSHOT|Axe|part|Grim Onslaught|parts/ico_mastery_axeTHROW.png|Hurl the axe forward, dealing up to 800 damage (further increased by determination) to enemies in its path and gaining 15 meter when hitting a Behemoth. Catch the axe to gain 30 meter.
+M|PART_GA_SPECIAL_SKILLSHOT_RESET|Axe|part|Relentless Onslaught|parts/ico_mastery_relentlessonslaught.png|Hurl the axe forward, damaging enemies in its path. Catch the axe to throw it again up to 2 more times in the next 5 seconds, dealing 500/600/1000 damage (further increased by determination). Does not build meter.
+M|PART_IH_PASSIVE_JUMP_ATTACK_BUFF|Hammer|part2|Impulse Crown|parts/ico_mastery_implusecrown.png|Aerial Strike grants increased damage dealt for 10 seconds. Bonus is doubled if a Behemoth's head is struck.
+M|PART_IH_PASSIVE_METER|Hammer|part2|Extended Clip|parts/ico_mastery_autoloaderrclip.png|Ammo increased to 6.
+M|PART_IH_PASSIVE_STAGGER_PASSTHROUGH|Hammer|part2|Weighted Crown|parts/ico_mastery_weightedcrown.png|Stagger damage is no longer halved when attacking Behemoth legs.
+M|PART_IH_PASSIVE_TRIALS_01|Hammer|part2|Antique Clip|parts/ico_mastery_Antiqueclip_6_1.png|Ammo decreased to 2, but bonus from aethercharged ammo is increased by 300%.
+M|PART_IH_PASSIVE_TRIALS_02|Hammer|part2|Turbine Trigger|parts/ico_ladyluck_hammer_1.png|Priming attacks increases attack speed by 10% until the combo ends. Stacks.
+M|PART_IH_SPECIAL_DEFAULT|Hammer|part|Concussive Salvo|parts/ico_mastery_concussivesalvo.png|Hold to load ammo into the hammer. Release to unleash a blast that deals up to 360 damage based on ammo loaded and can interrupt behemoths. Range increases with ammo loaded.
+M|PART_IH_SPECIAL_ISLANDCRACKER|Hammer|part|Mighty Landbreaker|parts/ico_mastery_islandcracker.png|Hold to load ammo into the hammer. Release to create an aether vent that buffs players who step over it, granting them up to +35% damage based on ammo quality.
+M|PART_IH_SPECIAL_ISLANDCRACKER_DEFENSIVE|Hammer|part|Ironheart Landbreaker|parts/ico_mastery_ironheartlandbreaker.png|Hold to load ammo into the hammer. Release to create an aether vent that buffs players who step over it, granting them +40% damage reduction and up to 155 healing over 30 seconds when aethercharged.
+M|PART_IH_SPECIAL_SALLY_EXOTIC|Hammer|part|Molten Edict|parts/ico_mastery_moltenedict.png|Converts all explosive uses of ammo into fireball attacks that deal damage based on ammo quality.
+M|PART_MS_PASSIVE_AMMO_GROWTH|War Pike|part2|Munitions Amplifier|parts/ico_mastery_munitionamplifier.png|Stored ammo quality increases slowly over time, up to max. Stored ammo quality is also increased by an additional 25%.
+M|PART_MS_PASSIVE_CHARGE_SPEED|War Pike|part2|Lightweight Shaft|parts/ico_mastery_lightweightshaft.png|Pike charge attack no longer costs stamina and always critically strikes.
+M|PART_MS_PASSIVE_TRIALS_01|War Pike|part2|Barbed Spearhead|parts/ico_mastery_barbedspearhead_6_1.png|After a dodge piercing attack, gain +50% wound damage for 8 seconds.
+M|PART_MS_PASSIVE_TRIALS_02|War Pike|part2|Executioner's Spearhead|parts/ico_ladyluck_spear_2.png|Each time you wound or assist wounding a behemoth part, gain +8% damage for 45 seconds. Stacks up to 5.
+M|PART_MS_PASSIVE_WEAVING|War Pike|part2|Balanced Spearhead|parts/ico_mastery_weavingpike.png|Increases damage dealt by 5% each time Piercing and Harvesting attacks are alternated. After the fifth alternating attack, increase damage dealt by +25% for 8 seconds. Resets upon combo end.
+M|PART_MS_SPECIAL_ATTACK_SPEED_DAMAGE_BUFF|War Pike|part|Savage Wellspring|parts/ico_mastery_savagewellspring.png|Press to convert meter into ammo. Hold to spend ammo to create an aura that buffs nearby allies with up to +30% critical strike chance based on ammo quality for 10 seconds.
+M|PART_MS_SPECIAL_BEAM|War Pike|part|Godhand|parts/ico_mastery_godhand.png|Use to convert meter into ammo. Hold to spend ammo to channel a beam that damages Behemoths the more it remains damaging them.
+M|PART_MS_SPECIAL_PROJECTILE|War Pike|part|Concussive Payload|parts/ico_mastery_concussivepayload.png|Press to convert meter into ammo. Hold to spend ammo to fire a missile that deals up to 1200 damage based on ammo quality and can interrupt Behemoths.
+M|PART_MS_SPECIAL_ROCKETLUNGE|War Pike|part|Reckless Leap|parts/ico_mastery_recklessleap.png|Press to convert meter into ammo. Hold to spend ammo and perform a flying lunge attack that deals up to 1500 damage based on distance and ammo quality.
+I|W|Aether Strikers|Agents of Decay|WP_AC_FUNGUY
+I|W|Chain Blades|Death Blossoms|WP_CB_FUNGUY
+I|W|Axe|Malignant Scourge|WP_GA_FUNGUY
+I|W|War Pike|Parasitic Curse|WP_MS_FUNGUY
+I|W|Sword|Poisonous Thorn|WP_EB_FUNGUY
+I|W|Repeater|Tainted Needles|WP_DP_FUNGUY
+I|W|Hammer|Unsteady Ground|WP_IH_FUNGUY
+I|W|Axe|Glyph Weaver Axe|WP_GA_AMBER
+I|W|Chain Blades|Glyph Weaver Blades|WP_CB_AMBER
+I|W|Aether Strikers|Glyph Weaver Claws|WP_AC_AMBER
+I|W|Sword|Glyph Weaver Edge|WP_EB_AMBER
+I|W|Hammer|Glyph Weaver Maul|WP_IH_AMBER
+I|W|Repeater|Glyph Weaver Pistols|WP_DP_AMBER
+I|W|War Pike|Glyph Weaver Spear|WP_MS_AMBER
+I|W|Aether Strikers|Brawlers of Boreus|WP_AC_HOST
+I|W|Hammer|Brutality of Boreus|WP_IH_HOST
+I|W|Chain Blades|Destiny of Boreus|WP_CB_HOST
+I|W|Sword|Onus of Boreus|WP_EB_HOST
+I|W|War Pike|Revolution of Boreus|WP_MS_HOST
+I|W|Axe|Turmoil of Boreus|WP_GA_HOST
+I|W|Repeater|Voice of Boreus|WP_DP_HOST
+I|W|Chain Blades|Charred Blades|WP_CB_SALLY
+I|W|Axe|Charred Cleaver|WP_GA_SALLY
+I|W|Hammer|Charred Crusher|WP_IH_SALLY
+I|W|Aether Strikers|Charred Hands|WP_AC_SALLY
+I|W|Repeater|Charred Pistols|WP_DP_SALLY
+I|W|Sword|Charred Saber|WP_EB_SALLY
+I|W|War Pike|Charred Spear|WP_MS_SALLY
+I|W|Hammer|Molten Edict|WP_IH_SALLY_EXOTIC
+I|W|Aether Strikers|Chaos & Entropy|WP_AC_GLITTER
+I|W|Sword|Edge of Tomorrow|WP_EB_GLITTER
+I|W|Axe|Existential Crisis|WP_GA_GLITTER
+I|W|Hammer|History's Burden|WP_IH_GLITTER
+I|W|War Pike|Millennium's End|WP_MS_GLITTER
+I|W|Repeater|Temporal Mechanics|WP_DP_GLITTER
+I|W|Chain Blades|The Weeping Hours|WP_CB_GLITTER
+I|W|Sword|Thundering Blade|WP_EB_FULGAR
+I|W|Aether Strikers|Thundering Bolts|WP_AC_FULGAR
+I|W|Chain Blades|Thundering Cutters|WP_CB_FULGAR
+I|W|Repeater|Thundering Guns|WP_DP_FULGAR
+I|W|Hammer|Thundering Maul|WP_IH_FULGAR
+I|W|Axe|Thundering Scythe|WP_GA_FULGAR
+I|W|War Pike|Thundering Spear|WP_MS_FULGAR
+I|W|Chain Blades|Ember Blades|WP_CB_LERAWR
+I|W|Sword|Ember Cutlass|WP_EB_LERAWR
+I|W|Aether Strikers|Ember Fists|WP_AC_LERAWR
+I|W|Hammer|Ember Maul|WP_IH_LERAWR
+I|W|War Pike|Ember Pike|WP_MS_LERAWR
+I|W|Axe|Ember Scythe|WP_GA_LERAWR
+I|W|Repeater|Ember Shots|WP_DP_LERAWR
+I|W|Sword|Fenroar's Blade|WP_EB_FENROAR
+I|W|War Pike|Fenroar's Branch|WP_MS_FENROAR
+I|W|Repeater|Fenroar's Roots|WP_DP_FENROAR
+I|W|Axe|Fenroar's Spine|WP_GA_FENROAR
+I|W|Chain Blades|Fenroar's Thistles|WP_CB_FENROAR
+I|W|Aether Strikers|Fenroar's Thorns|WP_AC_FENROAR
+I|W|Hammer|Fenroar's Trunk|WP_IH_FENROAR
+I|W|Sword|Frostwülf's Bite|WP_EB_FROSTWOLF
+I|W|Repeater|Frostwülf's Chillers|WP_DP_FROSTWOLF
+I|W|Axe|Frostwülf's Chomp|WP_GA_FROSTWOLF
+I|W|War Pike|Frostwülf's Rip|WP_MS_FROSTWOLF
+I|W|Chain Blades|Frostwülf's Skinners|WP_CB_FROSTWOLF
+I|W|Hammer|Frostwülf's Slam|WP_IH_FROSTWOLF
+I|W|Aether Strikers|Frostwülf's Tacklers|WP_AC_FROSTWOLF
+I|W|Axe|Recruit's Axe|WP_GA_BEGINNER
+I|W|Chain Blades|Recruit's Chain Blades|WP_CB_BEGINNER
+I|W|Hammer|Recruit's Hammer|WP_IH_BEGINNER
+I|W|Repeater|Recruit's Repeaters|WP_DP_BEGINNER
+I|W|Aether Strikers|Recruit's Strikers|WP_AC_BEGINNER
+I|W|Sword|Recruit's Sword|WP_EB_BEGINNER
+I|W|War Pike|Recruit's War Pike|WP_MS_BEGINNER
+I|W|Repeater|The Twin Suns|WP_DP_EXOTIC_BOMBS
+I|W|Sword|Training Sword|WP_EB_TRAINING
+I|W|Axe|Raging Bite|WP_GA_BEAVER
+I|W|Sword|Raging Blade|WP_EB_BEAVER
+I|W|Hammer|Raging Crash|WP_IH_BEAVER
+I|W|War Pike|Raging Cruelty|WP_MS_BEAVER
+I|W|Aether Strikers|Raging Fists|WP_AC_BEAVER
+I|W|Repeater|Raging Repeaters|WP_DP_BEAVER
+I|W|Chain Blades|Raging Teeth|WP_CB_BEAVER
+I|W|War Pike|Inferno's Arrow|WP_MS_LAVAROLLER
+I|W|Hammer|Inferno's Burden|WP_IH_LAVAROLLER
+I|W|Axe|Inferno's Decree|WP_GA_LAVAROLLER
+I|W|Chain Blades|Inferno's Fangs|WP_CB_LAVAROLLER
+I|W|Aether Strikers|Inferno's Flames|WP_AC_LAVAROLLER
+I|W|Sword|Inferno's Razor|WP_EB_LAVAROLLER
+I|W|Repeater|Inferno's Roar|WP_DP_LAVAROLLER
+I|W|Axe|Kharabak's Claw|WP_GA_SCISSORS
+I|W|Hammer|Kharabak's Jaw|WP_IH_SCISSORS
+I|W|Repeater|Kharabak's Lights|WP_DP_SCISSORS
+I|W|Aether Strikers|Kharabak's Pincers|WP_AC_SCISSORS
+I|W|Sword|Kharabak's Spur|WP_EB_SCISSORS
+I|W|War Pike|Kharabak's Sting|WP_MS_SCISSORS
+I|W|Chain Blades|Kharabak's Wings|WP_CB_SCISSORS
+I|W|Repeater|Sovereign's Decrees|WP_DP_PAPER
+I|W|Hammer|Sovereign's Grudge|WP_IH_PAPER
+I|W|Chain Blades|Sovereign's Lash|WP_CB_PAPER
+I|W|Aether Strikers|Sovereign's Sceptres|WP_AC_PAPER
+I|W|War Pike|Sovereign's Sorrow|WP_MS_PAPER
+I|W|Sword|Sovereign's Torment|WP_EB_PAPER
+I|W|Axe|Sovereign's Wrath|WP_GA_PAPER
+I|W|Sword|Cyclonic Fury|WP_EB_THUNDERBIRD
+I|W|Repeater|Dynamic Deadlights|WP_DP_THUNDERBIRD
+I|W|Chain Blades|Electric Cruelties|WP_CB_THUNDERBIRD
+I|W|Hammer|Galvanic Impact|WP_IH_THUNDERBIRD
+I|W|Aether Strikers|Mistral Currents|WP_AC_THUNDERBIRD
+I|W|Axe|Terminal Voltage|WP_GA_THUNDERBIRD
+I|W|War Pike|The Conductor|WP_MS_THUNDERBIRD
+I|W|Hammer|Nayzaga's Charge|WP_IH_ELECTROQUILL
+I|W|War Pike|Nayzaga's Fang|WP_MS_ELECTROQUILL
+I|W|Sword|Nayzaga's Razor|WP_EB_ELECTROQUILL
+I|W|Chain Blades|Nayzaga's Reach|WP_CB_ELECTROQUILL
+I|W|Axe|Nayzaga's Scythe|WP_GA_ELECTROQUILL
+I|W|Aether Strikers|Nayzaga's Shockers|WP_AC_ELECTROQUILL
+I|W|Repeater|Nayzaga's Spikes|WP_DP_ELECTROQUILL
+I|W|Sword|Pangar's Call|WP_EB_MCROLLIN
+I|W|Chain Blades|Pangar's Claws|WP_CB_MCROLLIN
+I|W|Axe|Pangar's Grace|WP_GA_MCROLLIN
+I|W|Repeater|Pangar's Nightmares|WP_DP_MCROLLIN
+I|W|Aether Strikers|Pangar's Punishers|WP_AC_MCROLLIN
+I|W|Hammer|Pangar's Rampage|WP_IH_MCROLLIN
+I|W|War Pike|Pangar's Tooth|WP_MS_MCROLLIN
+I|W|Axe|Call of the Firebird|WP_GA_HABANERO
+I|W|Repeater|Eyes of the Firebird|WP_DP_HABANERO
+I|W|War Pike|Fate of the Firebird|WP_MS_HABANERO
+I|W|Aether Strikers|Fists of the Firebird|WP_AC_HABANERO
+I|W|Hammer|Rage of the Firebird|WP_IH_HABANERO
+I|W|Sword|Shriek of the Firebird|WP_EB_HABANERO
+I|W|Chain Blades|Talons of the Firebird|WP_CB_HABANERO
+I|W|Chain Blades|Quillshot's Bonehooks|WP_CB_BULLSEYE
+I|W|Axe|Quillshot's Fury|WP_GA_BULLSEYE
+I|W|War Pike|Quillshot's Javelin|WP_MS_BULLSEYE
+I|W|Hammer|Quillshot's Roar|WP_IH_BULLSEYE
+I|W|Aether Strikers|Quillshot's Shredders|WP_AC_BULLSEYE
+I|W|Repeater|Quillshot's Stingers|WP_DP_BULLSEYE
+I|W|Sword|Quillshot's Tusk|WP_EB_BULLSEYE
+I|W|Hammer|Break of Dawn|WP_IH_BUGBEAR
+I|W|Sword|Call of Dawn|WP_EB_BUGBEAR
+I|W|Repeater|Dawnstars|WP_DP_BUGBEAR
+I|W|Axe|Edge of Dawn|WP_GA_BUGBEAR
+I|W|Chain Blades|Fangs of Dawn|WP_CB_BUGBEAR
+I|W|Aether Strikers|Hands of Dawn|WP_AC_BUGBEAR
+I|W|War Pike|Spire of Dawn|WP_MS_BUGBEAR
+I|W|War Pike|The Godhand|WP_MS_BUGBEAR_EXOTIC
+I|W|Repeater|Stalker's Cries|WP_DP_SHADOWCAT
+I|W|Axe|Stalker's Mercy|WP_GA_SHADOWCAT
+I|W|Hammer|Stalker's Price|WP_IH_SHADOWCAT
+I|W|Aether Strikers|Stalker's Scorn|WP_AC_SHADOWCAT
+I|W|War Pike|Stalker's Spike|WP_MS_SHADOWCAT
+I|W|Sword|Stalker's Strike|WP_EB_SHADOWCAT
+I|W|Chain Blades|Stalker's Trap|WP_CB_SHADOWCAT
+I|W|Repeater|Sahvyt's Avengers|WP_DP_MANTIS
+I|W|Axe|Sahvyt's Cleaver|WP_GA_MANTIS
+I|W|Sword|Sahvyt's Cutlass|WP_EB_MANTIS
+I|W|Aether Strikers|Sahvyt's Grapplers|WP_AC_MANTIS
+I|W|War Pike|Sahvyt's Javelin|WP_MS_MANTIS
+I|W|Hammer|Sahvyt's Maul|WP_IH_MANTIS
+I|W|Chain Blades|Sahvyt's Pincers|WP_CB_MANTIS
+I|W|Sword|Cry of the Shrike|WP_EB_MOONFACE
+I|W|Repeater|Eyes of the Shrike|WP_DP_MOONFACE
+I|W|Hammer|Fall of the Shrike|WP_IH_MOONFACE
+I|W|Aether Strikers|Fists of the Shrike|WP_AC_MOONFACE
+I|W|Chain Blades|Flight of the Shrike|WP_CB_MOONFACE
+I|W|War Pike|Scream of the Shrike|WP_MS_MOONFACE
+I|W|Axe|Song of the Shrike|WP_GA_MOONFACE
+I|W|Chain Blades|Eyes of Night|WP_CB_CROWBEAR
+I|W|Hammer|Fall of Night|WP_IH_CROWBEAR
+I|W|Repeater|Furies of the Night|WP_DP_CROWBEAR
+I|W|War Pike|Gyre of Night|WP_MS_CROWBEAR
+I|W|Aether Strikers|Hands of Night|WP_AC_CROWBEAR
+I|W|Axe|Reaper of Night|WP_GA_CROWBEAR
+I|W|Sword|The Hunger|WP_EB_CROWBEAR_EXOTIC
+I|W|Sword|Verge of Night|WP_EB_CROWBEAR
+I|W|Repeater|Skarn's Calamities|WP_DP_ROCK
+I|W|Axe|Skarn's Judgment|WP_GA_ROCK
+I|W|Chain Blades|Skarn's Malice|WP_CB_ROCK
+I|W|Sword|Skarn's Rancor|WP_EB_ROCK
+I|W|Aether Strikers|Skarn's Smashers|WP_AC_ROCK
+I|W|War Pike|Skarn's Spite|WP_MS_ROCK
+I|W|Hammer|Skarn's Vengeance|WP_IH_ROCK
+I|W|Repeater|Winter Blasts|WP_DP_SNOWFLAKE
+I|W|Axe|Winter Gale|WP_GA_SNOWFLAKE
+I|W|Sword|Winter Ice|WP_EB_SNOWFLAKE
+I|W|Hammer|Winter Squall|WP_IH_SNOWFLAKE
+I|W|War Pike|Winter Vortex|WP_MS_SNOWFLAKE
+I|W|Chain Blades|Winter Winds|WP_CB_SNOWFLAKE
+I|W|Aether Strikers|Winter Wolves|WP_AC_SNOWFLAKE
+I|W|Chain Blades|Storm Blades|WP_CB_SHOCKMANE
+I|W|Aether Strikers|Storm Breakers|WP_AC_SHOCKMANE
+I|W|Axe|Storm Cutter|WP_GA_SHOCKMANE
+I|W|Hammer|Storm Hammer|WP_IH_SHOCKMANE
+I|W|War Pike|Storm Pike|WP_MS_SHOCKMANE
+I|W|Repeater|Storm Shooters|WP_DP_SHOCKMANE
+I|W|Sword|Storm Sword|WP_EB_SHOCKMANE
+I|W|Repeater|Eldritch Torments|WP_DP_RANDALL
+I|W|Aether Strikers|Fractured Realities|WP_AC_RANDALL
+I|W|Axe|Mindsplitter|WP_GA_RANDALL
+I|W|Chain Blades|Night Terrors|WP_CB_RANDALL
+I|W|Hammer|Sanity Check|WP_IH_RANDALL
+I|W|War Pike|The Apocalypse Needle|WP_MS_RANDALL
+I|W|Sword|Voidbane|WP_EB_RANDALL
+I|W|Axe|Breakdown Voltage|WP_GA_FULGAR_ALPHA
+I|W|Chain Blades|Circuit Breakers|WP_CB_FULGAR_ALPHA
+I|W|War Pike|Inverse Polarity|WP_MS_FULGAR_ALPHA
+I|W|Hammer|Solid State|WP_IH_FULGAR_ALPHA
+I|W|Aether Strikers|Surge Projectors|WP_AC_FULGAR_ALPHA
+I|W|Sword|The Governor|WP_EB_FULGAR_ALPHA
+I|W|Repeater|Throwing Sparks|WP_DP_FULGAR_ALPHA
+I|W|Axe|Incinerator's Song|WP_GA_ARMSTRONG
+I|W|Hammer|Magma Quake|WP_IH_ARMSTRONG
+I|W|War Pike|Pyroclastic Envoy|WP_MS_ARMSTRONG
+I|W|Chain Blades|Scorching Agonies|WP_CB_ARMSTRONG
+I|W|Aether Strikers|Tectonic Faults|WP_AC_ARMSTRONG
+I|W|Sword|The Cauterizer|WP_EB_ARMSTRONG
+I|W|Repeater|Volcanic Eruptions|WP_DP_ARMSTRONG
+I|W|Chain Blades|Blizzard's Teeth|WP_CB_MINT
+I|W|Hammer|Bomb Cyclone|WP_IH_MINT
+I|W|War Pike|Cold Hell|WP_MS_MINT
+I|W|Repeater|Cryo-Cannons|WP_DP_MINT
+I|W|Sword|Hypothermica|WP_EB_MINT
+I|W|Aether Strikers|Ice Breakers|WP_AC_MINT
+I|W|Axe|Permanent Frost|WP_GA_MINT
+I|W|Hammer|Valomyr's Burden|WP_IH_SALT
+I|W|Axe|Valomyr's Decree|WP_GA_SALT
+I|W|War Pike|Valomyr's Hope|WP_MS_SALT
+I|W|Repeater|Valomyr's Instincts|WP_DP_SALT
+I|W|Sword|Valomyr's Regard|WP_EB_SALT
+I|W|Chain Blades|Valomyr's Revenge|WP_CB_SALT
+I|W|Aether Strikers|Valomyr's Visions|WP_AC_SALT
+I|A|Torso|Agaric Bole|AR_FUNGUY_CHEST
+I|A|Arms|Agaric Branches|AR_FUNGUY_ARMS
+I|A|Head|Agaric Canopy|AR_FUNGUY_HELM
+I|A|Legs|Agaric Roots|AR_FUNGUY_LEGS
+I|A|Legs|Spellbound Boots|AR_AMBER_LEGS
+I|A|Arms|Spellbound Gauntlets|AR_AMBER_ARMS
+I|A|Head|Spellbound Hood|AR_AMBER_HELM
+I|A|Torso|Spellbound Wings|AR_AMBER_CHEST
+I|A|Head|Boreal Epiphany|AR_HOST_HELM
+I|A|Legs|Boreal March|AR_HOST_LEGS
+I|A|Arms|Boreal Might|AR_HOST_ARMS
+I|A|Torso|Boreal Resolve|AR_HOST_CHEST
+I|A|Head|The Skullforge|AR_SALLY_EXOTIC_HELM
+I|A|Torso|Volcanic Aegis|AR_SALLY_CHEST
+I|A|Arms|Volcanic Grips|AR_SALLY_ARMS
+I|A|Head|Volcanic Helm|AR_SALLY_HELM
+I|A|Legs|Volcanic Treads|AR_SALLY_LEGS
+I|A|Arms|Chronogrips|AR_GLITTER_ARMS
+I|A|Head|Chronohelm|AR_GLITTER_HELM
+I|A|Torso|Chronoplate|AR_GLITTER_CHEST
+I|A|Legs|Chronotreads|AR_GLITTER_LEGS
+I|A|Arms|Draskscale Gauntlets|AR_FULGAR_ARMS
+I|A|Legs|Draskscale Greaves|AR_FULGAR_LEGS
+I|A|Head|Draskscale Helmet|AR_FULGAR_HELM
+I|A|Torso|Draskscale Plate|AR_FULGAR_CHEST
+I|A|Torso|Fiery Breastplate|AR_LERAWR_CHEST
+I|A|Arms|Fiery Gauntlets|AR_LERAWR_ARMS
+I|A|Legs|Fiery Greaves|AR_LERAWR_LEGS
+I|A|Head|Fiery Helm|AR_LERAWR_HELM
+I|A|Legs|Stonewood Boots|AR_FENROAR_LEGS
+I|A|Torso|Stonewood Chest Plate|AR_FENROAR_CHEST
+I|A|Arms|Stonewood Gauntlets|AR_FENROAR_ARMS
+I|A|Head|Stonewood Great Helm|AR_FENROAR_HELM
+I|A|Arms|Wülf Claws|AR_FROSTWOLF_ARMS
+I|A|Head|Wülf Mane|AR_FROSTWOLF_HELM
+I|A|Legs|Wülf Paws|AR_FROSTWOLF_LEGS
+I|A|Torso|Wülf Plate|AR_FROSTWOLF_CHEST
+I|A|Torso|Recruit's Breastplate|AR_BEGINNER_CHEST
+I|A|Arms|Recruit's Gloves|AR_BEGINNER_ARMS
+I|A|Legs|Recruit's Greaves|AR_BEGINNER_LEGS
+I|A|Head|Gnasher Cap|AR_BEAVER_HELM
+I|A|Torso|Gnasher Cloak|AR_BEAVER_CHEST
+I|A|Arms|Gnasher Grips|AR_BEAVER_ARMS
+I|A|Legs|Gnasher Treads|AR_BEAVER_LEGS
+I|A|Arms|Hellplate Bracers|AR_LAVAROLLER_ARMS
+I|A|Head|Hellplate Casque|AR_LAVAROLLER_HELM
+I|A|Torso|Hellplate Cuirass|AR_LAVAROLLER_CHEST
+I|A|Legs|Hellplate Greaves|AR_LAVAROLLER_LEGS
+I|A|Arms|Clutches of the Swarm|AR_SCISSORS_ARMS
+I|A|Legs|Dance of the Swarm|AR_SCISSORS_LEGS
+I|A|Head|Eye of the Swarm|AR_SCISSORS_HELM
+I|A|Torso|Shell of the Swarm|AR_SCISSORS_CHEST
+I|A|Arms|Grasp of Thorns|AR_PAPER_ARMS
+I|A|Torso|Mantle of Thorns|AR_PAPER_CHEST
+I|A|Legs|Stride of Thorns|AR_PAPER_LEGS
+I|A|Head|Visage of Thorns|AR_PAPER_HELM
+I|A|Head|Krolachi Shave|AR_NAKED_HELM
+I|A|Legs|Krolachi Shorts|AR_NAKED_LEGS
+I|A|Torso|Krolachi Tunic|AR_NAKED_CHEST
+I|A|Arms|Krolachi Wraps|AR_NAKED_ARMS
+I|A|Arms|Malkarion's Grasp|AR_THUNDERBIRD_ARMS
+I|A|Legs|Malkarion's March|AR_THUNDERBIRD_LEGS
+I|A|Head|Malkarion's Sight|AR_THUNDERBIRD_HELM
+I|A|Torso|Malkarion's Soul|AR_THUNDERBIRD_CHEST
+I|A|Head|Shocking Gaze|AR_ELECTROQUILL_HELM
+I|A|Arms|Shocking Grasp|AR_ELECTROQUILL_ARMS
+I|A|Torso|Shocking Heart|AR_ELECTROQUILL_CHEST
+I|A|Legs|Shocking Stride|AR_ELECTROQUILL_LEGS
+I|A|Arms|Arms of Ice|AR_MCROLLIN_ARMS
+I|A|Head|Brow of Ice|AR_MCROLLIN_HELM
+I|A|Torso|Core of Ice|AR_MCROLLIN_CHEST
+I|A|Legs|Feet of Ice|AR_MCROLLIN_LEGS
+I|A|Arms|Phaelanx's Firearms|AR_HABANERO_ARMS
+I|A|Legs|Phaelanx's Heatsinks|AR_HABANERO_LEGS
+I|A|Head|Phaelanx's Spearhead|AR_HABANERO_HELM
+I|A|Torso|Phaelanx's Vanguard|AR_HABANERO_CHEST
+I|A|Legs|Quillspike Boots|AR_BULLSEYE_LEGS
+I|A|Arms|Quillspike Grips|AR_BULLSEYE_ARMS
+I|A|Torso|Quillspike Jacket|AR_BULLSEYE_CHEST
+I|A|Head|Quillspike Mask|AR_BULLSEYE_HELM
+I|A|Head|Light's Crown|AR_BUGBEAR_HELM
+I|A|Arms|Light's Refuge|AR_BUGBEAR_ARMS
+I|A|Torso|Light's Virtue|AR_BUGBEAR_CHEST
+I|A|Legs|Light's Walk|AR_BUGBEAR_LEGS
+I|A|Head|Prismatic Grace|AR_BUGBEAR_EXOTIC_HELM
+I|A|Head|Guise of the Rift|AR_SHADOWCAT_HELM
+I|A|Arms|Hands of the Rift|AR_SHADOWCAT_ARMS
+I|A|Torso|Mantle of the Rift|AR_SHADOWCAT_CHEST
+I|A|Legs|Striders of the Rift|AR_SHADOWCAT_LEGS
+I|A|Legs|Bladed Boots|AR_MANTIS_LEGS
+I|A|Arms|Bladed Gloves|AR_MANTIS_ARMS
+I|A|Torso|Bladed Jacket|AR_MANTIS_CHEST
+I|A|Head|Bladed Mask|AR_MANTIS_HELM
+I|A|Arms|Shrikedown Gloves|AR_MOONFACE_ARMS
+I|A|Legs|Shrikedown Greaves|AR_MOONFACE_LEGS
+I|A|Head|Shrikedown Helm|AR_MOONFACE_HELM
+I|A|Torso|Shrikedown Plate|AR_MOONFACE_CHEST
+I|A|Arms|Dark Embrace|AR_CROWBEAR_ARMS
+I|A|Torso|Dark Marrow|AR_CROWBEAR_CHEST
+I|A|Legs|Dark Path|AR_CROWBEAR_LEGS
+I|A|Head|Dark Watch|AR_CROWBEAR_HELM
+I|A|Head|Tragic Echo|AR_CROWBEAR_EXOTIC_HELM
+I|A|Torso|Heart of Stone|AR_ROCK_CHEST
+I|A|Arms|Might of Stone|AR_ROCK_ARMS
+I|A|Legs|Pillars of Stone|AR_ROCK_LEGS
+I|A|Head|Sight of Stone|AR_ROCK_HELM
+I|A|Legs|Skraevwing Boots|AR_SNOWFLAKE_LEGS
+I|A|Arms|Skraevwing Gloves|AR_SNOWFLAKE_ARMS
+I|A|Head|Skraevwing Helmet|AR_SNOWFLAKE_HELM
+I|A|Torso|Skraevwing Jacket|AR_SNOWFLAKE_CHEST
+I|A|Legs|Lightning Boots|AR_SHOCKMANE_LEGS
+I|A|Arms|Lightning Gloves|AR_SHOCKMANE_ARMS
+I|A|Head|Lightning Helm|AR_SHOCKMANE_HELM
+I|A|Torso|Lightning Plate|AR_SHOCKMANE_CHEST
+I|A|Arms|Thrax's Embrace|AR_RANDALL_ARMS
+I|A|Legs|Thrax's Guile|AR_RANDALL_LEGS
+I|A|Head|Thrax's Scream|AR_RANDALL_HELM
+I|A|Torso|Thrax's Shadow|AR_RANDALL_CHEST
+I|A|Head|Thunderdeep's Capacitor|AR_FULGAR_ALPHA_HELM
+I|A|Torso|Thunderdeep's Dynamo|AR_FULGAR_ALPHA_CHEST
+I|A|Arms|Thunderdeep's Regulators|AR_FULGAR_ALPHA_ARMS
+I|A|Legs|Thunderdeep's Turbines|AR_FULGAR_ALPHA_LEGS
+I|A|Arms|Timeweave Gauntlets|AR_CRYSTAL_ARMS
+I|A|Head|Timeweave Helm|AR_CRYSTAL_HELM
+I|A|Legs|Timeweave Leggings|AR_CRYSTAL_LEGS
+I|A|Torso|Timeweave Robes|AR_CRYSTAL_CHEST
+I|A|Head|Torgadoro's Apex|AR_ARMSTRONG_HELM
+I|A|Arms|Torgadoro's Brawn|AR_ARMSTRONG_ARMS
+I|A|Torso|Torgadoro's Core|AR_ARMSTRONG_CHEST
+I|A|Legs|Torgadoro's Gait|AR_ARMSTRONG_LEGS
+I|A|Legs|Adversary's Drive|AR_MINT_LEGS
+I|A|Head|Adversary's Guile|AR_MINT_HELM
+I|A|Torso|Adversary's Pride|AR_MINT_CHEST
+I|A|Arms|Adversary's Wrath|AR_MINT_ARMS
+I|A|Torso|Aegis of Valour|AR_SALT_CHEST
+I|A|Head|Crest of Valour|AR_SALT_HELM
+I|A|Arms|Gauntlets of Valour|AR_SALT_ARMS
+I|A|Legs|Greaves of Valour|AR_SALT_LEGS
+I|C|Acidic|CELL_CONVERT_PART_TO_EXPOSE_E
+I|C|Adrenaline|CELL_LOWSTA_ATKDMG_E
+I|C|Aegis|CELL_SHIELDS_HIT_ABSORB_E
+I|C|Aetherborne|CELL_AETHERVENT_E
+I|C|Aetherhunter|CELL_VSAETHER_BASEDMG_E
+I|C|Aetheric Attunement|CELL_LANTERNCHARGE_PCT_E
+I|C|Aetheric Evasion|CELL_LANTERNCHARGE_FLAT_E
+I|C|Agility|CELL_DODGE_COST_E
+I|C|Assassin's Frenzy|CELL_LOWHP_ATKSPD_E
+I|C|Assassin's Vigour|CELL_MYBREAK_REGEN_E
+I|C|Barbed|CELL_EXPOSE_FLAT_E
+I|C|Berserker|CELL_TRIALS_01_E
+I|C|Bladestorm|CELL_PARTBREAK_FLAT_E
+I|C|Bloodless|CELL_REDUCE_WOUNDED_E
+I|C|Cascade|CELL_ENCHANTER_E
+I|C|Catalyst|CELL_BETTER_CONSUMABLE_E
+I|C|Conditioning|CELL_STAM_REGEN_FLAT_E
+I|C|Conduit|CELL_LANTERN_USE_ATKSPD_E
+I|C|Conservation|CELL_MS_DOWN_SHIELD_UP_E
+I|C|Cunning|CELL_CRIT_CHANCE_E
+I|C|Deconstruction|CELL_OBJECT_BREAKER_E
+I|C|Drop|CELL_MIN_STAM_E
+I|C|Earth|CELL_SHIELD_DETONATION_E
+I|C|Endurance|CELL_STAM_MAX_E
+I|C|Energized|CELL_METER_GAIN_E
+I|C|Engineer|CELL_TRIALS_03_E
+I|C|Evasion|CELL_DODGE_IFRAME_E
+I|C|Evasive Fury|CELL_PDODGE_ATKSPD_E
+I|C|Fire|CELL_ATKSPD_MVSPD_SELFHARM_E
+I|C|Fireproof|CELL_REDUCE_ONFIRE_E
+I|C|Fleet Footed|CELL_DODGE_SPD_UP_E
+I|C|Fortress|CELL_DONTGETHIT_SHIELD_E
+I|C|Galvanized|CELL_HPSHIELD_CRIT_E
+I|C|Grace|CELL_SPRINT_INCREASE_E
+I|C|Guardian|CELL_SHARE_SHIELD_E
+I|C|Impulse|CELL_CRIT_DAMAGE_FROM_MS_E
+I|C|Inertia|CELL_CRIT_CHANCE_WHILE_SPRINT_E
+I|C|Insulated|CELL_REDUCE_SHOCKED_E
+I|C|Invigorated|CELL_STAM_TO_MOVESPEED_E
+I|C|Knockout King|CELL_STAGGER_PCT_E
+I|C|Lucent|CELL_FLASKOVERTIME_LANTERN_E
+I|C|Medic|CELL_REVIVE_BETTER_E
+I|C|Mender|CELL_TRIALS_06_E
+I|C|Merciless|CELL_VSSTAGGER_EXPOSE_FLAT_E
+I|C|Molten|CELL_MOLTEN_HEART_E
+I|C|Nimble|CELL_PDODGE_STAMINA_E
+I|C|Nine Lives|CELL_DMG_REDUX_CHANCE_E
+I|C|Omnisurge|CELL_OMNISURGE_E
+I|C|Overpower|CELL_VSSTAGGER_BASEDMG_E
+I|C|Pacifier|CELL_VSRAGE_STAGGER_PCT_E
+I|C|Pack Caller|CELL_BREAK_SUMMON_FAUNA_E
+I|C|Pack Hunter|CELL_KILL_FAUNA_DMG_E
+I|C|Pack Walker|CELL_NEAR_FAUNA_MS_AS_E
+I|C|Parasitic|CELL_DELAYED_DAMAGE_E
+I|C|Predator|CELL_DONTGETHIT_DAMAGE_E
+I|C|Pulse|CELL_RHYTHMIC_E
+I|C|Rage|CELL_LOWHP_BASEDMG_E
+I|C|Ragehunter|CELL_VSRAGE_BASEDMG_E
+I|C|Recycle|CELL_SAME_PART_DMG_UP_E
+I|C|Reduce|CELL_DMGUP_ATKSPDDOWN_E
+I|C|Relentless|CELL_AETHER_RUSHER_E
+I|C|Reuse|CELL_PART_BREAK_ATKSPD_UP_E
+I|C|Roll|CELL_STAGGER_FREE_DODGE_E
+I|C|Rushdown|CELL_INTERRUPT_STAM_E
+I|C|Savagery|CELL_VSEXPOSED_BASEDMG_E
+I|C|Sharpened|CELL_PARTBREAK_PCT_E
+I|C|Shellshock Resist|CELL_REDUCE_SHELLSHOCKED_E
+I|C|Sprinter|CELL_TRIALS_04_E
+I|C|Stop|CELL_DODGE_STAGGER_E
+I|C|Strategist|CELL_TRIALS_02_E
+I|C|Stunning Vigour|CELL_ANYSTAGGER_REGEN_E
+I|C|Sturdy|CELL_PREVENT_STAGGER_E
+I|C|Swift|CELL_OUTOFCOMBAT_MOVESPD_E
+I|C|Tactician|CELL_TEAMEXPOSE_E
+I|C|Tenacious|CELL_HPSHIELD_DAMAGE_E
+I|C|Tough|CELL_HEALTH_MAX_E
+I|C|Vampiric|CELL_ANYEXPOSE_REGEN_E
+I|C|Warmth|CELL_REDUCE_CHILLED_AND_FROZEN_E
+I|C|Water|CELL_DODGE_DR_E
+I|C|Weighted Strikes|CELL_STAGGER_FLAT_E
+I|C|Zeal|CELL_LANTERN_TAP_EFFECTIVENESS_E

@@ -1,0 +1,30 @@
+{
+  "title": "Dauntless Companion",
+  "about": "Health bars for the behemoths you hit, with stagger, enrage and aethercharge indicators. Hunt Stats tracks lifetime stats per weapon type. Build Search finds armor sets for your perks. Save, share and pin builds. Play in borderless or windowed mode.",
+  "keys": [
+    [
+      "F10",
+      "Open the settings window"
+    ],
+    [
+      "F8",
+      "Show or hide the health bars"
+    ],
+    [
+      "F4",
+      "Clear the active health bars and the pinned build"
+    ],
+    [
+      "F9",
+      "Preview mode (move, resize and test animations)"
+    ],
+    [
+      "Ctrl+Alt+Arrow keys",
+      "Move the bars while in preview mode (Ctrl+Alt+Home resets)"
+    ],
+    [
+      "Ctrl+Shift+Arrow keys",
+      "Resize the bars while in preview mode (Ctrl+Shift+Home resets)"
+    ]
+  ]
+}
