@@ -1,0 +1,179 @@
+# Behemoth names shown on the health bars. You can change anything after the = to whatever you want.
+# e.g.  randall = Randall the Vandal
+# Changes show up in game upon saving, no restart needed.
+
+# ---Alyra---
+amber_normal = Alyra
+
+# ---Boreus---
+host_normal = Boreus
+host_alpha = Dreadfrost Boreus
+host_heroic = Dreadfrost Boreus (Heroic)
+host_beta = Lesser Boreus
+host_radiant = Lightbound Boreus
+
+# ---Charrogg---
+sq_sally_normal = Charrogg
+sq_sally_alpha = Firebrand Charrogg
+sq_sally_heroic = Firebrand Charrogg (Heroic)
+sq_sally_terrogg = Sporestruck Charrogg
+
+# ---Drask---
+fulgar_normal = Drask
+fulgar_alpha = Thunderdeep Drask
+fulgar_beta = Lesser Drask
+fulgar_umbral = Shadowtouched Drask
+dummy_fulgar = Training Dummy Drask
+
+# ---Embermane---
+lerawr_alpha = Bloodfire Embermane
+lerawr_heroic = Bloodfire Embermane (Heroic)
+lerawr_normal = Embermane
+lerawr_beta = Lesser Embermane
+
+# ---Fenroar---
+terramane_normal = Fenroar
+terramane_alpha = Earthshaper Fenroar
+
+# ---Frostwulf---
+aq_wolf_frost = Frostwulf
+
+# ---Gnasher---
+mcbeaver_frost = Deepfrost Gnasher
+mcbeaver_blaze = Flameborn Gnasher
+mcbeaver_normal = Gnasher
+mcbeaver_beta = Lesser Gnasher
+mcbeaver_alpha = Ragetail Gnasher
+mcbeaver_heroic = Ragetail Gnasher (Heroic)
+
+# ---Hellion---
+lavaroller_normal = Hellion
+lavaroller_alpha = Scorchstone Hellion
+lavaroller_heroic = Scorchstone Hellion (Heroic)
+
+# ---Kharabak---
+scissors_normal = Kharabak
+scissors_alpha = Razorwing Kharabak
+scissors_heroic = Razorwing Kharabak (Heroic)
+
+# ---Koshai---
+paper_normal = Koshai
+paper_heroic = Koshai (Heroic)
+paper_radiant = Lightbound Koshai
+paper_umbral = Shadowtouched Koshai
+
+# ---Nayzaga---
+electroquill_normal = Nayzaga
+electroquill_umbral = Shadowtouched Nayzaga
+electroquill_alpha = Shockjaw Nayzaga
+electroquill_heroic = Shockjaw Nayzaga (Heroic)
+
+# ---Pangar---
+mcrollin_alpha = Frostback Pangar
+mcrollin_heroic = Frostback Pangar (Heroic)
+mcrollin_normal = Pangar
+
+# ---Phaelanx---
+habanero_normal = Phaelanx
+
+# ---Quillshot---
+bullseye_alpha = Deadeye Quillshot
+bullseye_heroic = Deadeye Quillshot (Heroic)
+bullseye_blaze = Flameborn Quillshot
+bullseye_beta = Lesser Quillshot
+bullseye_normal = Quillshot
+
+# ---Rezakiri---
+bugbear_blaze = Flameborn Rezakiri
+bugbear_normal = Rezakiri
+
+# ---Riftstalker---
+shadowcat_normal = Riftstalker
+shadowcat_normal_heroic = Riftstalker (Heroic)
+
+# ---Sahvyt---
+mantis_normal = Sahvyt
+
+# ---Shrike---
+moonface_alpha = Moonreaver Shrike
+moonface_heroic = Moonreaver Shrike (Heroic)
+moonface_normal = Shrike
+
+# ---Shrowd---
+crowbear_alpha = Bloodshot Shrowd
+crowbear_alpha_clone = Bloodshot Shrowd Clone
+crowbear_normal = Shrowd
+crowbear_normal_clone = Shrowd Clone
+
+# ---Skarn---
+sq_ice_rock = Deepfrost Skarn
+sq_rock_alpha = Rockfall Skarn
+sq_rock_heroic = Rockfall Skarn (Heroic)
+sq_rock_normal = Skarn
+
+# ---Skraev---
+snowflake_normal_new = Skraev
+snowflake_alpha = Winterhorn Skraev
+snowflake_heroic = Winterhorn Skraev (Heroic)
+
+# ---Stormclaw---
+shockmane_normal = Stormclaw
+shockmane_alpha = Tempestborne Stormclaw
+shockmane_heroic = Tempestborne Stormclaw (Heroic)
+
+# ---Valomyr---
+sq_salt_normal = Valomyr
+sq_salt_normal_heroic = Valomyr (Heroic)
+
+# ---Escalation Keystone Behemoths---
+thunderbird_normal = Malkarion
+thunderbird_trials = Malkarion (Trials)
+thunderbird_heroic = Stormrider Malkarion
+armstrong_normal = Torgadoro
+armstrong_heroic = Landbreaker Torgadoro
+randall_normal = Thrax
+randall_heroic = Feareater Thrax
+funguy_normal = Agarus
+funguy_heroic = Blightbringer Agarus
+mint_normal = Urska
+mint_heroic = Bonechiller Urska
+glitter_normal = Chronovore
+glitter_heroic = Soulreaper Chronovore
+
+
+# --------------- Name Fallback ---------------
+# Do not change these; any name ID that is listed above will always
+# have priority over these fallback names. These are for any behemoth
+# variant that might have been missed during the naming process.
+
+amber = Alyra
+host = Boreus
+sally = Charrogg
+fulgar = Drask
+lerawr = Embermane
+terramane = Fenroar
+wolf = Frostwulf
+mcbeaver = Gnasher
+lavaroller = Hellion
+scissors = Kharabak
+paper = Koshai
+electroquill = Nayzaga
+mcrollin = Pangar
+habanero = Phaelanx
+bullseye = Quillshot
+bugbear = Rezakiri
+shadowcat = Riftstalker
+mantis = Sahvyt
+moonface = Shrike
+crowbear = Shrowd
+rock = Skarn
+snowflake = Skraev
+shockmane = Stormclaw
+salt = Valomyr
+
+thunderbird = Malkarion
+armstrong = Torgadoro
+randall = Thrax
+mint = Urska
+funguy = Agarus
+glitter = Chronovore
